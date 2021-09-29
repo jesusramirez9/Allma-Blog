@@ -1,4 +1,23 @@
-<x-app-layout>
+@extends('layouts.webapp')
+@section('content')
+<div id="myCarousel" class=" slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%"></rect>
+            </svg>
+            <img src="{{ asset('images/blog/slider.png') }}" class="img-fluid" alt="slider">
+            <div class="container">
+                <div class="centrado contac_txt">
+                    <h1 class="txtcontc1">Blog</h1>
+                    <p class="txtcontc2">Consejos y noticias</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
     <div class="container py-8">
         <h1 class="text-4xl font-bold text-gray-600">{{$post->name}}</h1>
         <div class="text-lg text-gray-500 mb-2">
@@ -41,4 +60,4 @@
             </aside>
         </div>
     </div>
-</x-app-layout>
+    @endsection

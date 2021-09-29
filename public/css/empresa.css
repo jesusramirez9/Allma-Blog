@@ -110,6 +110,23 @@ color: white;
     .frmnput{
         padding: 0.375rem 0rem;
     }
+    .w_rm{
+        width: 3rem;
+    }
+    .contac_txt{
+        top: 67% !important;
+        left: 41% !important;
+    }
+    .txtcontc1{
+    font-family: 'openExtraBold';
+    font-size: 2rem;
+    text-shadow: 1px 2px 6px #5d5d5d;
+    }
+    .txtcontc2{
+            font-family: 'openExtraBold';
+    font-size: 2rem;
+    text-shadow: 1px 2px 6px #5d5d5d;
+    }
 }
 
 @media (min-width: 375px) {
@@ -164,6 +181,13 @@ color: white;
     .tx-cntr{
         text-align: center;
     }
+    .txtcontc1{
+        font-size: 3rem;
+        }
+        .contac_txt{
+            top: 59% !important;
+            left: 28% !important;
+        }
 }
 
 @media (min-width: 1024px) {
@@ -187,6 +211,20 @@ color: white;
     .txt-compromis {
         font-size: 2rem;
         padding: 2rem 0;
+    }
+    .txtcontc2 {
+        font-size: 3rem;
+    }
+    .txtcontc1 {
+        font-size: 3.6rem;
+    }
+    .contac_txt {
+        top: 75% !important;
+        left: 34% !important;
+    }
+    .fstxtblux {
+        
+        padding: 2.5rem 0;
     }
 }
 
@@ -214,6 +252,12 @@ color: white;
     .cajaazul {
         background-color: #427CCE;
         padding: 0.5rem 7rem;
+    }
+    .txtcontc2 {
+        font-size: 4rem;
+    }
+    .txtcontc1 {
+        font-size: 4rem;
     }
 }
 @media (min-width: 1600px) {
