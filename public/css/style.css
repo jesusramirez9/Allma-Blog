@@ -1,0 +1,273 @@
+@font-face{
+    font-family: rale;
+    src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'openSemiBold';
+    src: url(../fonts/OpenSans-SemiBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'openBold';
+    src: url(../fonts/OpenSans-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'openExtraBold';
+    src: url(../fonts/OpenSans-ExtraBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: rale;
+}
+
+section {
+    display: table;
+    width: 100%;
+}
+
+body {
+    background-color: transparent;
+}
+
+.np {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nm {
+    margin-left: 0;
+    margin-right: 0;
+}
+.py-2r{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.logo-header{
+    width: 70px;
+    transition: all .3s;
+}
+.header .navbar{
+    align-items: center;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    display: inline-block;
+    padding: 1rem 1rem;
+    transition: all .3s;
+    background-color: #fff;
+}
+.header-content {
+    width: 80%;
+    margin: auto;
+    font-size: 5px;
+}
+
+.navbar-brand {
+    width: 20%;
+    color: #373737;
+}
+.navbar-brand .img-fluid {
+    padding-top: 0.5rem;
+}
+
+.header .navbar-light .navbar-nav .nav-link{
+    color: #000;
+    font-weight: bold;
+    font-size: .85rem;
+    font-family: rale;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+}
+
+.prime:hover{
+    color: #fff !important;
+    background:#4B8CE8;
+}
+
+.header2{
+    background-color: #fff;
+}
+.header2 .logo-header{
+    width: 70px;
+    transition: all .3s;
+}
+.header2 .navbar-light .navbar-nav .nav-link {
+    color: #212121;
+}
+.header .navbar-light .navbar-nav .nav-link.active{
+    color: #EAA65E !important;
+}
+.header .navbar-nav{
+    display: block;
+    padding-left: 4rem;
+}
+.header2 .img-red-header{
+    filter: invert(1);
+}
+.nav-item-social{
+    display: inline-block;
+    padding: 0 10px;
+}
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+.header2 .navbar-light .navbar-toggler {
+    color: #11312C;
+    border-color: #11312C;
+}
+
+.section_general {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Menú responsive movil*/
+.section-general {
+    width: 100%;
+    position: relative;
+    float: left;
+}
+.text-naranja{
+    color: #FAA85E !important;
+}
+.text-verde{
+    color: #11312C !important;
+}
+
+.footer {
+    background: #121212;
+    font-family: rale;
+    color: #fff;
+}
+
+.list-unstyled li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.redes-footer img{
+    height: 24px;
+}
+
+.footer-logo{
+    padding: 1rem;
+    align-self: center;
+}
+.footer-contacto{
+    font-size: 1rem;
+}
+.footer-contacto label{
+    font-size: 0.9rem;
+}
+.footer-contacto .form-control{
+    border-radius: 0;
+}
+.footer-contacto button{
+    border-radius: 0;
+    background-color: #4E8BDB;
+    font-size: 0.9rem;
+}
+.footer-end p{
+    padding: 2rem 1rem;
+    color: #969696;
+}
+/**********************/
+
+
+/*Responsive*/
+
+/* iphone 4 */
+
+@media (min-width: 320px) {
+    .section_general {
+        padding-top: 60px;
+    }
+    
+}
+
+
+/*Fin 320*/
+
+@media(min-width: 375px) {
+    .section_general {
+        padding-top: 60px;
+    }
+    
+}
+
+@media(min-width: 425px) {
+    
+}
+
+@media(max-width: 767px) {
+    
+}
+
+@media (min-width: 768px) {
+    
+}
+
+
+/*Fin 768*/
+
+@media (min-width: 992px) {
+    .logo-header{
+        width: 120px;
+    }
+    .header .navbar-nav {
+        display: flex;
+    }
+    .nav-item-social{
+        display: block;
+        padding: 0;
+    }
+    .section_general {
+        padding-top: 75px;
+    }
+    
+}
+
+
+/*Fin 992*/
+
+@media (min-width: 1200px) {
+    .header{
+        padding: 1rem 4rem;
+    }
+    .header .navbar {
+        align-items: flex-start;
+    }
+    
+}
+
+
+/*Fin 1200*/
+
+@media (min-width: 1400px) {
+    
+}
+
+@media(min-width: 1600px) {
+    
+    
+}
+
+@media (min-width:1900px) {
+    
+}

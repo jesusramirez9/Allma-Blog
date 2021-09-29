@@ -1,0 +1,178 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    color: #5a5a5a;
+  }
+  
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  .custom-slide {
+    background-color: #0178bc;
+    height: 5rem;
+  }
+
+  .custom-slide-content {
+    height: 1rem;
+  }
+
+  .slide-azul{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.custom-card {
+  background-color: #0178bc;
+  max-width: 31.5em;
+  border: white;
+  border-radius: 0.7rem;
+}
+
+.centrado .texto{
+  font-size: 32pt;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.custom-img{
+  transform: translate(-500%,-50%)!important;
+}
+
+.button-wspp{
+  border: 0rem;
+  background-color: transparent;
+  position: fixed;
+  bottom: 7rem;
+  right: 2rem;
+}
+
+.button-wspp .wspp{
+  width: 84px;
+}
+
+.custom-modal{
+  background-color: none;
+}
+.custom-modal .modal-body{
+  background-color: #0178bc;
+  max-width: 32em;
+  border: white;
+  background-color: none;
+}
+.custom-header {
+  background-color: white;
+}
+
+.custom-title{
+  color: #0178bc;
+  font-size: 35pt;
+}
+
+.custom-description{
+  font-style: italic;
+  font-size: 10pt;
+}
+
+.title-container {
+  padding-bottom: 1.5rem;
+}
+
+.banner-home h1{
+  font-family: 'openExtraBold';
+  font-size: 6rem;
+  text-shadow: 1px 2px 6px #5d5d5d;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.banner-home p{
+  font-size: 5rem;
+  margin-bottom: 0;
+  font-family: 'openSemiBold';
+  text-shadow: 1px 2px 6px #5d5d5d;
+}
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }

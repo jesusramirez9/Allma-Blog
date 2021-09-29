@@ -16,13 +16,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[PostController::class,'index'])->name('posts.index');
+Route::get('/index',[PostController::class,'index'])->name('posts.index');
 
 Route::get('/posts/{post}',[PostController::class,'show'])->name('posts.show');
 
 Route::get('/category/{category}',[PostController::class,'category'])->name('posts.category');
 
 Route::get('/tag/{tag}',[PostController::class,'tag'])->name('posts.tag');
+
+Route::get('/inicio', function () {
+    return view('web.inicio');
+})->name('web.inicio');
+Route::get('/nosotros', function () {
+    return view('web.nosotros');
+})->name('web.nosotros');
+Route::get('/empresa', function () {
+    
+})->name('web.empresa');
+Route::get('', function () {
+    
+});
+Route::get('', function () {
+    
+});
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

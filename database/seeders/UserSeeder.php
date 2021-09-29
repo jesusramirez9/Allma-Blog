@@ -14,11 +14,19 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
+        User::create(
+            [
             'name'=>'Jesus Ramirez Garcia',
             'email'=>'jesus.ramirez9@unmsm.edu.pe',
             'password'=>bcrypt('12345678')
-            ])->assignRole('Admin');
+            ],
+            [
+                'name'=>'Luis Pachas',
+                'email'=>'luis.pacha1@unmsm.edu.pe',
+                'password'=>bcrypt('12345678') 
+            ]
+            
+            )->assignRole('Admin');
         User::factory(20)->create();
     }
 }
