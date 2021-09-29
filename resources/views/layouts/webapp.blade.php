@@ -13,6 +13,8 @@
     <link href="{{asset('css/hover.css')}}" rel="stylesheet">
     <link href="{{asset('css/animate.css')}}" rel="stylesheet">
     <link href="{{asset('css/custom.css')}}" rel="stylesheet">
+    <link href="{{asset('css/empresa.css')}}" rel="stylesheet">
+
 </head>
 
 <body>
@@ -30,22 +32,22 @@
                 <div class="collapse navbar-collapse py-3 justify-content-md-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item ms-xl-3">
-                            <a class="nav-link prime" href="{{route('web.inicio')}}">INICIO</a>
+                            <a class="nav-link {{ (request()->is('inicio')) ? 'active' :'' }} prime" href="{{route('web.inicio')}}">INICIO</a>
                         </li>
                         <li class="nav-item ms-xl-3">
-                            <a class="nav-link prime" href="{{route('web.nosotros')}}">NOSOTROS</a>
+                            <a class="nav-link {{ (request()->is('nosotros')) ? 'active' :'' }} prime" href="{{route('web.nosotros')}}">NOSOTROS</a>
                         </li>
                         <li class="nav-item ms-xl-3">
-                            <a class="nav-link prime" href="{{route('web.empresa')}}">EMPRESA</a>
+                            <a class="nav-link {{ (request()->is('empresa')) ? 'active' :'' }} prime" href="{{route('web.empresa')}}">EMPRESA</a>
                         </li>
                         <li class="nav-item ms-xl-3">
-                            <a class="nav-link prime" href="">PROGRAMAS</a>
+                            <a class="nav-link {{ (request()->is('programa')) ? 'active' :'' }} prime" href="{{route('web.programa')}}">PROGRAMAS</a>
                         </li>
                         <li class="nav-item ms-xl-3">
-                            <a class="nav-link prime" href="">BLOG</a>
+                            <a class="nav-link {{ (request()->is('blog')) ? 'active' :'' }} prime" href="{{route('web.blog')}}">BLOG</a>
                         </li>
                         <li class="nav-item ms-xl-3">
-                            <a class="nav-link prime" href="">CÚENTAME ALGO</a>
+                            <a class="nav-link {{ (request()->is('contacto')) ? 'active' :'' }} prime" href="{{route('web.contacto')}}">CÚENTAME ALGO</a>
                         </li>
                         <li class="nav-item nav-item-social ms-xl-3">
                             <a class="nav-link" href="" target="_blank"><img src="{{('images/logo_fb.png')}}"
@@ -73,12 +75,12 @@
             <div class="row col-md-9 mx-auto">
                 <div class="col-md-4 py-4">
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Inicio</a></li>
-                        <li class="mb-2"><a href="#">Nosotros</a></li>
-                        <li class="mb-2"><a href="#">Empresa</a></li>
-                        <li class="mb-2"><a href="#">Programas</a></li>
-                        <li class="mb-2"><a href="#">Blog</a></li>
-                        <li class="mb-2"><a href="#">Cuéntame algo</a></li>
+                        <li class="mb-2"><a href="{{route('web.inicio')}}">Inicio</a></li>
+                        <li class="mb-2"><a href="{{route('web.nosotros')}}">Nosotros</a></li>
+                        <li class="mb-2"><a href="{{route('web.empresa')}}">Empresa</a></li>
+                        <li class="mb-2"><a href="{{route('web.programa')}}">Programas</a></li>
+                        <li class="mb-2"><a href="{{route('web.blog')}}">Blog</a></li>
+                        <li class="mb-2"><a href="{{route('web.contacto')}}">Cuéntame algo</a></li>
                     </ul>
                     <div class="redes-footer d-flex align-items-center py-3">
                         <div class="">

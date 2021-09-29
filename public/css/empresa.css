@@ -1,0 +1,222 @@
+.txt-empresa {
+    margin-bottom: 0;
+    font-family: "openExtraBold";
+    text-shadow: 1px 2px 6px #5d5d5d;
+    font-weight: 600;
+    
+}
+.txtbluex{
+    color: #4F8AE1;
+}
+.fstxtblux{
+    font-size: 1.5rem;
+    font-weight:600 ;
+}
+.txt-black{
+    color: black;
+}
+.txt-grs{
+    color: #434343;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-last{
+    text-align-last: center;
+}
+.cajaazul{
+font-weight: 600;
+color: white;
+}
+.fs_sm{
+    font-size: 0.75rem;
+}
+
+.fw600{
+    font-weight: 600;
+}
+.fwbold{
+    font-weight: bold;
+}
+.tick{
+    height: 1.5rem;
+    width: 0.5rem;
+    padding: 0rem !important;
+}
+.ml-2{
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+}
+.txt-compromis{
+    color:#458BE1 ;
+    font-weight: 600;
+
+}
+.form-inpt{
+    border-bottom: 1px solid #ced4da !important;
+    border: none;
+    border-radius: 0;
+}
+.form-msj{
+    border-radius: 0;
+}
+.txt-gray_s{
+    color: #8B8B8B;
+}
+.form-inpt::placeholder{ 
+    color:#8B8B8B ;
+    font-size: 0.8rem;
+}
+.btn_contacto{
+    border-radius: 0;
+    background-color: #458BE1;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1.8rem;
+}
+
+@media (min-width: 320px) {
+    .txt-empresa {
+        font-size: 2rem;
+    }
+    .centradoempresa {
+        top: 40% !important;
+        left: 45% !important;
+    }
+    .n_rp{
+        display: none;
+    }
+    .text-empre1{
+        padding: 1rem 0.5rem;
+        margin: 0;
+        font-weight: 600;
+    }
+    .spac_min{
+        padding-top: 0.5rem;
+    }
+    .txt-compromis{
+        font-size: 1.4rem;
+        padding: 1rem 0;
+      
+    }
+    .mr_progres2{
+        margin-top: 10rem;
+    }
+    .fstxtblux{
+        text-align: center;
+        margin: 0;
+        padding: 1.5rem 0;
+    }
+    .frmnput{
+        padding: 0.375rem 0rem;
+    }
+}
+
+@media (min-width: 375px) {
+    .txt-empresa {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 425px) {
+}
+
+@media (min-width: 768px) {
+    .fstxtblux{
+        text-align: start;
+       
+    }
+    .frm-nc{
+        padding: .375rem 0rem;
+    }
+    .txt-empresa {
+        font-size: 1.8rem;
+    }
+    .centradoempresa {
+        top: 49% !important;
+        left: 42% !important;
+    }
+    .mx_3web{
+        margin: 0 1rem;
+    }
+    .n_rp{
+        display: block;
+    }
+    .text-empre1{
+        padding: 4rem 0rem;
+        margin: 0;
+    }
+    .cajaazul {
+        background-color: #427CCE;
+        padding: 0.5rem 2rem;
+    }
+    .spac_min{
+        padding-top: 1.5rem;
+    }
+    .txt-compromis{
+        font-size: 1.4rem;
+        padding: 1rem 0;
+     
+    }  
+    .mr_progres2{
+        margin-top: 0rem;
+    }
+    .tx-cntr{
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .txt-empresa {
+        font-size: 2.4rem;
+    }
+    .centradoempresa {
+        top: 54% !important;
+        left: 42% !important;
+    }
+    .cajaazul{
+        font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 600;
+    color: white;
+    }
+    .cajaazul {
+        background-color: #427CCE;
+        padding: 0.5rem 3rem;
+    }
+    .txt-compromis {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: 1250px) {
+    .cajaazul {
+        background-color: #427CCE;
+        padding: 0.5rem 5rem;
+    }
+    .fstxtblux {
+        font-size: 2rem;
+      
+    }
+}
+
+@media (min-width: 1320px) {
+    .txt-empresa {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .txt-empresa {
+        font-size: 3.4rem;
+    }
+    .cajaazul {
+        background-color: #427CCE;
+        padding: 0.5rem 7rem;
+    }
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1920px) {
+}

@@ -27,18 +27,26 @@ Route::get('/tag/{tag}',[PostController::class,'tag'])->name('posts.tag');
 Route::get('/inicio', function () {
     return view('web.inicio');
 })->name('web.inicio');
+
 Route::get('/nosotros', function () {
     return view('web.nosotros');
 })->name('web.nosotros');
+
 Route::get('/empresa', function () {
-    
+    return view('web.empresa');
 })->name('web.empresa');
-Route::get('', function () {
-    
-});
-Route::get('', function () {
-    
-});
+
+Route::get('/programa', function () {
+    return view('web.programa');
+})->name('web.programa');
+
+Route::get('/blog', function () {
+    return view('web.blog');
+})->name('web.blog');
+
+Route::get('/contacto', function () {
+    return view('web.contacto');
+})->name('web.contacto');
 
 
 
