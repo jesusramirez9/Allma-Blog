@@ -14,6 +14,9 @@
     <link href="{{asset('css/animate.css')}}" rel="stylesheet">
     <link href="{{asset('css/custom.css')}}" rel="stylesheet">
     <link href="{{asset('css/empresa.css')}}" rel="stylesheet">
+    <link href="{{asset('css/home.css')}}" rel="stylesheet">
+    <link href="{{asset('css/nosotros.css')}}" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
    

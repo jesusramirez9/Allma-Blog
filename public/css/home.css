@@ -1,0 +1,825 @@
+.letra5 {
+    color: #5589da;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 4rem !important;
+  }
+  
+  .lead b {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .btn-close {
+    position: absolute;
+    left: 610px;
+    top: 10px;
+  }
+  
+  .custom-card {
+    background-color: #0178bc;
+    max-width: 40em;
+    border: white;
+    border-radius: 0.7rem;
+  }
+  
+  .text-center {
+    text-align: center !important;
+    position: relative;
+    left: -15px;
+  }
+  
+  .mano {
+    position: absolute;
+    top: 226px;
+    margin: auto;
+    margin-left: 25px;
+  }
+  
+  .lead {
+    font-size: 17px;
+  }
+  
+  .row {
+    --bs-gutter-x: 4.5rem !important;
+  }
+  
+  .cambio3 button {
+    text-align: right;
+    padding: 1px 10px;
+    background-color: #fff;
+    border: #fff 1px solid;
+    position: relative;
+    float: right;
+    margin-top: 3rem;
+  }
+  
+  .cambio3 button:hover {
+    background-color: #447bcc;
+    color: #fff;
+  }
+  
+  .texto {
+    font-size: 30px !important;
+    line-height: 120px;
+    font-weight: 590;
+  }
+  
+  .centrado button {
+    text-align: right;
+    padding: 2px 15px;
+    border: #fff 1px solid;
+    font-size: 19px;
+    font-weight: 600;
+    color: #447bcc;
+    background-color: #e5ecf8;
+  }
+  
+  .centrado button:hover {
+    color: #447bcc;
+    background-color: #fff;
+  }
+  
+  .text-center h2 {
+    color: #447bcc;
+    font-size: 50px;
+  }
+  
+  .text-center h3 {
+    color: #020202;
+    font-size: 55px;
+  }
+  
+  .ima img {
+    width: 180px;
+    height: 100%;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+  
+  .btn2 {
+    border-radius: 0px;
+    border: 1px solid transparent;
+    padding: 2px 15px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #447bcc;
+    background-color: #e5ecf8;
+  }
+  
+  .btn2:hover {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    color: #447bcc;
+    background-color: #fff;
+  }
+  
+  .cardi1 {
+    margin-right: 30px;
+  }
+  
+  .cardi2 {
+    margin-left: 15px;
+  }
+  
+  .custom-modal .modal-body {
+    background-color: #0178bc;
+    max-width: 100%;
+    border: white;
+    background-color: none;
+  }
+  
+  .modal-dialog {
+    max-width: 980px;
+    margin: 1.75rem auto;
+  }
+  
+  .ima2 img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card3 {
+    flex: 0 0 auto;
+    width: 62%;
+  }
+  
+  .letra7 {
+    color: black;
+    font-size: 25px;
+    text-align: left;
+  }
+  
+  .letra8 {
+    font-size: 25px;
+    text-align: left;
+  }
+  
+  .letra9 {
+    font-size: 17px;
+    text-align: justify;
+  }
+  
+  @media (max-width: 1200px) {
+    .btn-close {
+      position: absolute;
+      left: 610px;
+      top: -20px;
+    }
+  
+    .letra5 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 2rem !important;
+    }
+  
+    .row {
+      --bs-gutter-x: 2rem !important;
+    }
+  
+    .lead {
+      font-size: 15px;
+    }
+  
+    .cardi1 {
+      margin-right: 30px;
+    }
+  
+    .cardi2 {
+      margin-left: 15px;
+    }
+  
+    .letra10 h1 {
+      font-size: 5rem;
+    }
+  
+    .letra10 p {
+      font-size: 4rem;
+    }
+  
+    .ima img {
+      width: 160px;
+      height: 100%;
+    }
+  
+    .text-center {
+      text-align: center !important;
+      position: relative;
+      left: 0px;
+    }
+  
+    .card3 {
+      flex: 0 0 auto;
+      width: 62%;
+      position: relative;
+      top: 30px;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .btn-close {
+      position: absolute;
+      left: 480px;
+      top: 15px;
+    }
+  
+    .modal-dialog {
+      max-width: 760px;
+      margin: 1.75rem auto;
+    }
+  
+    .ima2 img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .card3 {
+      flex: 0 0 auto;
+      width: 66%;
+      position: relative;
+      top: -10px;
+    }
+  
+    .letra7 {
+      color: black;
+      font-size: 23px;
+      text-align: left;
+    }
+  
+    .letra8 {
+      font-size: 23px;
+      text-align: left;
+    }
+  
+    .letra9 {
+      font-size: 16px;
+      text-align: justify;
+    }
+  
+    .letra5 {
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: 10px !important;
+    }
+  
+    .lead {
+      font-size: 12px;
+    }
+  
+    .cardi1 {
+      margin-left: 15px;
+      margin: auto;
+    }
+  
+    .cardi2 {
+      margin-left: 15px;
+      margin: auto;
+      top: 20px;
+    }
+  
+    .letra10 h1 {
+      font-size: 5rem;
+    }
+  
+    .letra10 p {
+      font-size: 4rem;
+    }
+  
+    .cambio3 button {
+      text-align: right;
+      padding: 1px 10px;
+      background-color: #fff;
+      border: #fff 1px solid;
+      position: relative;
+      float: right;
+      margin-top: 2px;
+    }
+  
+    .cuadro img {
+      display: block;
+      margin: auto;
+      margin-bottom: 5px;
+    }
+  
+    .custom-slide {
+      background-color: #0178bc;
+      height: 7rem;
+    }
+  
+    .carousel-caption {
+      bottom: 5rem;
+      z-index: 10;
+    }
+  
+    .texto {
+      font-size: 25px !important;
+      line-height: 120px;
+      font-weight: 500;
+    }
+  
+    .centrado b {
+      font-size: 26px !important;
+    }
+  
+    .d-flex5 {
+      display: block !important;
+    }
+  
+    .custom-card {
+      background-color: #0178bc;
+      max-width: 40em;
+      border: white;
+      border-radius: 0.7rem;
+    }
+  
+    .ima img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .card-body {
+      flex: 1 1 auto;
+      padding: 2rem 2rem;
+    }
+  
+    .text-center {
+      text-align: center !important;
+      position: relative;
+      left: -15px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .btn-close {
+      position: absolute;
+      left: 96%;
+    }
+  
+    .tarjeta {
+      flex: 1 1 auto;
+      padding: 2rem 2rem;
+    }
+    .modal-dialog {
+      max-width: 760px;
+      margin: 1.75rem auto;
+    }
+  
+    .ima2 img {
+      width: 100%;
+      height: 80%;
+      position: relative;
+  
+      top: 480px;
+    }
+  
+    .card3 {
+      flex: 0 0 auto;
+      width: 100%;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+    }
+  
+    .letra7 {
+      color: black;
+      font-size: 18px;
+      text-align: left;
+    }
+  
+    .letra8 {
+      font-size: 18px;
+      text-align: left;
+    }
+  
+    .letra9 {
+      font-size: 15px;
+      text-align: justify;
+      position: relative;
+      top: -40px;
+    }
+  
+    .letra10 h1 {
+      font-size: 3.5rem;
+    }
+  
+    .row {
+      --bs-gutter-x: 1.5rem !important;
+    }
+  
+    .letra10 p {
+      font-size: 2.5rem;
+    }
+  
+    .row > .cambio,
+    .cambio3 {
+      flex-shrink: 0;
+      width: 90%;
+      max-width: 100%;
+      padding-right: calc(var(--bs-gutter-x) * 0) !important;
+      padding-left: calc(var(--bs-gutter-x) * 1.5) !important;
+      margin-top: var(--bs-gutter-y);
+    }
+  
+    .cambio svg {
+      margin-top: 20px;
+    }
+  
+    .ima img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .texto {
+      font-size: 19px !important;
+      line-height: 120px;
+      font-weight: 600;
+    }
+  
+    .centrado b {
+      font-size: 20px !important;
+    }
+  
+    .custom-img {
+      transform: translate(-50%, -50%) !important;
+    }
+  
+    .card-body {
+      flex: 1 1 auto;
+      padding: 2rem 1.5rem;
+    }
+  
+    .modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+      pointer-events: auto;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 0.3rem;
+      outline: 0;
+    }
+  
+    .mano {
+      position: absolute;
+      top: 222px;
+      width: 40px;
+      margin: auto;
+      margin-left: 25px;
+    }
+  
+    .text-center {
+      text-align: center !important;
+      position: relative;
+      left: -10px;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .btn-close {
+      position: absolute;
+      left: 94%;
+    }
+    .modal-dialog {
+      max-width: 760px;
+      margin: 1.75rem auto;
+    }
+  
+    .ima2 img {
+      width: 100%;
+      height: 80%;
+      position: relative;
+  
+      top: 460px;
+    }
+  
+    .card3 {
+      flex: 0 0 auto;
+      width: 100%;
+      position: absolute;
+      top: -10px;
+      left: 1px;
+    }
+  
+    .letra7 {
+      color: black;
+      font-size: 15px;
+      text-align: left;
+      position: relative;
+      top: -20px;
+    }
+  
+    .letra8 {
+      font-size: 15px;
+      text-align: left;
+      position: relative;
+      top: -20px;
+    }
+  
+    .letra9 {
+      font-size: 13px;
+      text-align: justify;
+      position: relative;
+      top: -60px;
+    }
+  
+    .start-100 {
+      left: 1% !important;
+    }
+  
+    .mano {
+      position: absolute;
+      top: 180px;
+      width: 35px;
+      margin: auto;
+      margin-left: 25px;
+    }
+  
+    .letra10 h1 {
+      font-size: 2.5rem;
+    }
+  
+    .row {
+      --bs-gutter-x: 1.5rem !important;
+    }
+  
+    .letra10 p {
+      font-size: 2rem;
+    }
+  
+    .carousel-item > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 20rem;
+    }
+  
+    .carousel-caption {
+      bottom: 1rem;
+      z-index: 10;
+    }
+  
+    .inicial rect {
+      height: 50% !important;
+    }
+  
+    .carousel-item {
+      height: 20rem;
+    }
+  
+    .cuadro img {
+      display: block;
+      margin: auto;
+      margin-top: -50px;
+  
+      width: 60%;
+      height: 40px;
+      margin-bottom: 5px;
+    }
+  
+    .cuadro p {
+      font-size: 10px;
+    }
+  
+    .custom-slide {
+      background-color: #0178bc;
+      height: 7rem !important;
+    }
+  
+    .cambio svg {
+      margin-top: 20px;
+    }
+  
+    .texto {
+      font-size: 13px !important;
+      line-height: 80px;
+      font-weight: 600;
+    }
+  
+    .centrado b {
+      font-size: 18px !important;
+    }
+  
+    .ima img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .card-body {
+      flex: 1 1 auto;
+      padding: 2rem 0.5rem;
+    }
+  
+    .tarjeta {
+      flex: 1 1 auto;
+      padding: 2rem 2rem;
+    }
+  
+    .custom-card {
+      background-color: #0178bc;
+      max-width: 20rem;
+      border: white;
+      border-radius: 0.7rem;
+    }
+  
+    .modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      margin: auto;
+      pointer-events: auto;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 0.3rem;
+      outline: 0;
+    }
+  
+    .button-wspp .wspp {
+      width: 60px;
+    }
+  
+    .text-center {
+      text-align: center !important;
+      position: relative;
+      left: 0px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .btn-close {
+      position: absolute;
+      left: 92%;
+    }
+    .modal-dialog {
+      max-width: 760px;
+      margin: 1.75rem auto;
+    }
+  
+    .ima2 img {
+      width: 100%;
+      height: 80%;
+      position: relative;
+  
+      top: 480px;
+    }
+  
+    .card3 {
+      flex: 0 0 auto;
+      width: 100%;
+      position: absolute;
+      top: -10px;
+      left: 1px;
+    }
+  
+    .letra7 {
+      color: black;
+      font-size: 15px;
+      text-align: left;
+      position: relative;
+      top: -10px;
+    }
+  
+    .letra8 {
+      font-size: 15px;
+      text-align: left;
+      position: relative;
+      top: -10px;
+    }
+  
+    .letra9 {
+      font-size: 12px;
+      text-align: justify;
+      position: relative;
+      top: -50px;
+    }
+  
+    .tarjeta {
+      flex: 1 1 auto;
+      padding: 2rem 1rem;
+    }
+  
+    .letra10 h1 {
+      font-size: 2.2rem;
+    }
+  
+    .texto {
+      font-size: 10px !important;
+      line-height: 80px;
+      font-weight: 600;
+    }
+  
+    .row {
+      --bs-gutter-x: 1rem !important;
+    }
+  
+    .letra10 p {
+      font-size: 1.8rem;
+    }
+  
+    .carousel-item > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 20rem;
+    }
+  
+    .carousel-caption {
+      bottom: 1rem;
+      z-index: 10;
+    }
+  
+    .inicial rect {
+      height: 50% !important;
+    }
+  
+    .carousel-item {
+      height: 20rem;
+    }
+  
+    .cuadro img {
+      display: block;
+      margin: auto;
+      margin-top: -50px;
+  
+      width: 60%;
+      height: 40px;
+      margin-bottom: 5px;
+    }
+  
+    .cuadro p {
+      font-size: 8px;
+    }
+  
+    .custom-slide {
+      background-color: #0178bc;
+      height: 7rem !important;
+    }
+  
+    .cambio svg {
+      margin-top: 20px;
+    }
+  
+    .centrado b {
+      font-size: 15px !important;
+    }
+  
+    .ima img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .card-body {
+      flex: 1 1 auto;
+      padding: 2rem 0.5rem;
+    }
+  
+    .custom-card {
+      background-color: #0178bc;
+      max-width: 17rem;
+      border: white;
+      border-radius: 0.7rem;
+    }
+  
+    .modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+      pointer-events: auto;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 0.3rem;
+      outline: 0;
+    }
+  
+    .button-wspp .wspp {
+      width: 60px;
+    }
+  
+    .text-center h2 {
+      color: #447bcc;
+      font-size: 30px;
+    }
+  
+    .text-center h3 {
+      color: #020202;
+      font-size: 35px;
+    }
+  
+    .text-center {
+      text-align: center !important;
+      position: relative;
+      left: 0px;
+    }
+  }
+  
