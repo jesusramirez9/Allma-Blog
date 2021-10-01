@@ -14,7 +14,10 @@
     <link href="{{asset('css/animate.css')}}" rel="stylesheet">
     <link href="{{asset('css/custom.css')}}" rel="stylesheet">
     <link href="{{asset('css/empresa.css')}}" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+   
+    @yield('assets')
 </head>
 
 <body>
@@ -44,7 +47,7 @@
                             <a class="nav-link {{ (request()->is('programa')) ? 'active' :'' }} prime" href="{{route('web.programa')}}">PROGRAMAS</a>
                         </li>
                         <li class="nav-item ms-xl-3">
-                            <a class="nav-link {{ (request()->is('blog')) ? 'active' :'' }} prime" href="{{route('web.blog')}}">BLOG</a>
+                            <a class="nav-link {{ (request()->is('blog')) ? 'active' :'' }} prime" href="{{route('posts.index')}}">BLOG</a>
                         </li>
                         <li class="nav-item ms-xl-3">
                             <a class="nav-link {{ (request()->is('contacto')) ? 'active' :'' }} prime" href="{{route('web.contacto')}}">CÚENTAME ALGO</a>
@@ -121,6 +124,18 @@
             <p class="text-center mb-0">Allma 2021 Todos los derechos reservados</p>
         </div>
     </footer>
+
+     {{-- Scripts por pagina --}}
+     @yield('scripts')
+     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script type="text/javascript" src="slick/slick.min.js"></script>
+   <script>
+         
+$('.single-item-rtl').slick({
+  rtl: true
+});
+   </script>
 </body>
 
 </html>

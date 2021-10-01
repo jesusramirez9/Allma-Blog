@@ -24,7 +24,7 @@ Route::get('/category/{category}',[PostController::class,'category'])->name('pos
 
 Route::get('/tag/{tag}',[PostController::class,'tag'])->name('posts.tag');
 
-Route::get('/inicio', function () {
+Route::get('/', function () {
     return view('web.inicio');
 })->name('web.inicio');
 
@@ -43,6 +43,11 @@ Route::get('/programa', function () {
 Route::get('/blog', function () {
     return view('web.blog');
 })->name('web.blog');
+
+Route::get('/blog/detail', function () {
+    return view('web.blogshow');
+})->name('web.blogdetail');
+
 
 Route::get('/contacto', function () {
     return view('web.contacto');

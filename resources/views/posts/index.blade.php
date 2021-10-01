@@ -19,20 +19,46 @@
     </div>
 
     <div class="container">
-        <p>Mantente enterado de todo</p>
-        <p>Acerca de una vida más feliz</p>
-
-        <div class="row">
+        <div class="indx-blg">
+            <p class="m-0 fw600">Mantente enterado de todo</p>
+            <p class="bluzol">Acerca de una vida más feliz</p>
+        </div>
+        <div class="row mrowblg">
             @foreach ($posts as $post)
-            <div class="col-12 col-md-6 shadow p-3 mb-5 bg-body gap-3 ">
-                asd
-            </div>
+                <div class="col-12 col-md-6 mt-4  position-relative">
+                    <div class=" shadow mrl bg-nrpte bg-cover  bg-body h-sda  bg-center"
+                        style="background-image: url(@if ($post->image) {{ Storage::url($post->image->url) }} @else https://cdn.pixabay.com/photo/2020/11/07/10/36/motorcycle-5720553_960_720.jpg @endif)">
+
+                        <div class="fondo_graybajo position-absolute">
+                            <div class="p-2">
+                                <h1 class="mrgnt">
+                                    <a class="rute_a" href="{{ route('posts.show', $post) }}">
+                                        {{ $post->name }}
+                                    </a>
+
+                                </h1>
+                                <div class="txtsizesm mrgdas">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet accusantium assumenda nam
+                                    nobis cupiditate voluptatibus obcaecati rerum expedita illum maiores ea co </div>
+                                <div class="text-black fw600 mrgdas txt_dte">
+                                    12 mayo 19
+                                </div>
+                                {{-- <div class="position-relative" >
+                                {!!$post->extract!!}
+                            </div> --}}
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
             @endforeach
         </div>
 
     </div>
 
-    <div class="container py-8">
+    {{-- <div class="container py-8">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             @foreach ($posts as $post)
@@ -58,6 +84,5 @@
             @endforeach
         </div>
 
-    </div>
+    </div> --}}
 @endsection
-

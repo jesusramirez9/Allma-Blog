@@ -50,7 +50,10 @@ color: white;
 .txt-compromis{
     color:#458BE1 ;
     font-weight: 600;
-
+}
+.bluzol{
+    color:#458BE1 ;
+    font-weight: 600;
 }
 .form-inpt{
     border-bottom: 1px solid #ced4da !important;
@@ -74,7 +77,47 @@ color: white;
     font-weight: 600;
     padding: 0.5rem 1.8rem;
 }
+.bg-cover{
+    background-size: cover;
+} 
+.bg-center{
+    background-position: center;
+}
+.bg-nrpte{
+    background-repeat: no-repeat;
+}
+.fondo_graybajo{
+    background-color: #F2F2F2;
+    height: 100%;
+    width: 65%;
+    top: 0;
 
+}
+
+.txtsizesm{
+    font-size: 0.75rem;
+}
+.h-10{
+    width: 10%;
+}
+.w-10{
+    width: 10%;
+}
+.w_rmsa{
+    width: 7rem;
+}
+.fwsm{
+    font-size: 0.75rem;
+}
+.text-black{
+    color: black;
+}
+.inptprgrs{
+    background: #E4E4E4;
+    padding: 0rem 0.8rem;
+    border-radius: 0;
+    line-height: 1.2;
+}
 @media (min-width: 320px) {
     .txt-empresa {
         font-size: 2rem;
@@ -127,6 +170,74 @@ color: white;
     font-size: 2rem;
     text-shadow: 1px 2px 6px #5d5d5d;
     }
+    .h-sda{
+       height: 12rem;
+    }
+    .rute_a{
+        font-size: 0.8rem;
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .indx-blg{
+        text-align: center;
+        margin-top: 2.2rem;
+    }
+    .mrgnt{
+        margin: 0;
+        line-height: 0.5;
+    }
+    .mrgdas{
+        margin-top: 0.8rem;
+    }
+    .txt_dte{
+        font-size: 0.7rem;
+    }
+    .mrowblg{
+        margin-bottom: 2rem;
+    }
+    .mrg-indtl{
+        margin-top: 2rem;
+    }
+    .hrmg{
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    .spcrm5{
+        margin: 1.5rem 0rem 1rem 0;;
+    }
+    .mtd-sa{
+        margin-top: 2rem;
+    }
+    .pstremc{
+        text-align: start;
+    }
+    .mbconcts{
+        margin-bottom: 2rem;
+    }
+    .txtprogr1,.txtprogr2{
+        text-align: center;
+    }
+    .txtprogr2{
+        font-family: "openExtraBold";
+        font-weight: 500 !important;
+    }
+    .mrgprogr{
+        margin-bottom: 2rem;
+    }
+    .fot2prog{
+        margin-top: 2rem;
+    }
+    .cardpromrp{
+        border: 0;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    .btn_progrms{
+        background-color: #427CCE;
+        border-radius: 0;
+        color: white;
+        font-weight: 600;
+    }
 }
 
 @media (min-width: 375px) {
@@ -139,6 +250,15 @@ color: white;
 }
 
 @media (min-width: 768px) {
+    .mrgprogr{
+        margin-bottom: 4rem;
+    }
+    .txtprogr1,.txtprogr2{
+        text-align: start;
+    }
+    .pstremc{
+        text-align: center;
+    }
     .fstxtblux{
         text-align: start;
        
@@ -188,9 +308,40 @@ color: white;
             top: 59% !important;
             left: 28% !important;
         }
-}
+        .mrl{
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+        .indx-blg{
+            text-align: start;
+            margin-top: 2.2rem;
+        }
+        .mrowblg{
+            margin-bottom: 4rem;
+        }
+        .bluzol {
+            
+            font-size: 1.5rem;
+        }
+        .mrg-indtl{
+            margin-top: 4rem;
+        }
+        .hrmg{
+            margin-top: 2rem;
+            margin-bottom: 1.7rem;
+        }
+        .mbconcts{
+            margin-bottom: 2.5rem;
+        }
+        .fot2prog{
+            margin-top: 0rem;
+        }
+    }
 
 @media (min-width: 1024px) {
+    .fot2prog{
+        margin-top: 0rem;
+    }
     .txt-empresa {
         font-size: 2.4rem;
     }
@@ -226,6 +377,31 @@ color: white;
         
         padding: 2.5rem 0;
     }
+    .h-sda{
+        height: 15rem;
+    }
+    .mrgnt {
+        margin: 1rem 0;
+    }
+    .mrg-indtl{
+        margin-top: 5rem;
+    }
+    .hrmg{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .mtd-sa{
+        margin-top: 4rem;
+    }
+    .mbconcts{
+        margin-bottom: 3rem;
+    }
+    .txtprogr1{
+        font-size: 1.5rem;
+    }
+    .txtprogr2{
+        font-size: 1.7rem;
+    }
 }
 
 @media (min-width: 1250px) {
@@ -243,6 +419,15 @@ color: white;
     .txt-empresa {
         font-size: 3rem;
     }
+    .rute_a{
+        font-size: 1.3rem;
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .txtsizesm {
+        font-size: 1.15rem;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -258,6 +443,12 @@ color: white;
     }
     .txtcontc1 {
         font-size: 4rem;
+    }
+    .h-sda{
+        height: 18rem;
+    }
+    .txt_dte {
+        font-size: 1rem;
     }
 }
 @media (min-width: 1600px) {

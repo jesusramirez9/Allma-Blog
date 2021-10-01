@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <div class="container mb-4">
+    <div class="container mbconcts">
         <div class="row">
             <div class="col-12 col-md-6">
                 <p class="txtbluex fstxtblux">¡Hablemos!</p>

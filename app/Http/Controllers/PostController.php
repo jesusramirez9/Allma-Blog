@@ -26,7 +26,7 @@ class PostController extends Controller
             $posts = Cache::get($key);
         }else{
                 // satatus 1 borrador, status 2 publicado
-        $posts = Post::where('status',2)->latest('id')->paginate(8);
+        $posts = Post::where('status',2)->latest('id')->paginate(4);
         Cache::put($key, $posts);
         }
 

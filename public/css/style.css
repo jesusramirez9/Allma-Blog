@@ -107,8 +107,9 @@ body {
 .header2 .navbar-light .navbar-nav .nav-link {
     color: #212121;
 }
-.header .navbar-light .navbar-nav .nav-link.active{
-    color: #EAA65E !important;
+.header .navbar-light .navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    background: #427cce;
 }
 .header .navbar-nav{
     display: block;
