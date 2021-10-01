@@ -13,7 +13,7 @@
           <div class="container">
             <div class="carousel-caption text-start banner-home letra10">
               <h1>Comienza tu</h1>
-              <p>Revolución Interior</p>
+              <p class="revo_inte">Revolución Interior</p>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@
                 ALLMA
                 capacitamos el talento y potencial a través de principios, valores, competencias vitales para que
                 alcances tu éxito personal y profesional.</p>
-              <button>Leer más</button>
+              <button class="btn_mx">Leer más</button>
             </div>
             <div class="col-md-7 cambio">
               <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
