@@ -122,10 +122,81 @@ color: white;
 }
 .inptprgrs{
     background: #E4E4E4;
-    padding: 0rem 0.8rem;
+    padding: 0.2rem 0.8rem;
     border-radius: 0;
     line-height: 1.2;
 }
+
+.img-square{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.program-item{
+    margin: 0 15px;
+    padding: 40px 0;
+}
+.program1 .slick-active.slick-center{
+    position: relative;
+}
+.program1 .slick-active.slick-center::after{
+    content: '';
+    display: block;
+    width: 418px;
+    height: 8px;
+    background-color: #427CCE;
+    position: absolute;
+    bottom: 0;
+    left: -55px;
+    z-index: 10;
+    transition: all 300ms ease;
+}
+.program1 .slick-active.slick-center > div {
+    width: 100%;
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    color: #e67e22;
+    opacity: 1;
+    transform: scale(1.5);
+    transition: all 300ms ease;
+    z-index: 9;
+    border-left: 15px solid #fff;
+    border-right: 15px solid #fff;
+}
+.program1 {
+    transition: all 300ms ease;
+}
+.program1 h2{
+    font-size: 2.5rem;
+    margin: 3.5rem 0;
+    font-family: 'openBold';
+    color: #4F8AE4;
+}
+.program1 a{
+    background-color: #4F8AE4;
+    border-color: #4F8AE4;
+    padding: .5rem 1rem;
+}
+.slick-flechas{
+    margin-top: 4rem;
+}
+.slick-flechas button{
+    padding: 1px 8px;
+    background: #4f8ae4;
+    border-color: #4f8ae4;
+    border-radius: 0;
+}
+.slick-flechas span{
+    vertical-align: middle;
+    color: #4f8ae4;
+    margin: 0 15px;
+}
+
+
 @media (min-width: 320px) {
     .txt-empresa {
         font-size: 2rem;
@@ -273,9 +344,7 @@ color: white;
     text-shadow: 1px 2px 6px #5d5d5d !important;
   
     }
-    .progra1rp{
-        display: none;
-    }
+    
     .mrgprogr{
         margin-bottom: 4rem;
     }

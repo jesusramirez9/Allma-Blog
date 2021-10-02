@@ -24,7 +24,7 @@ body {
   .carousel-item {
     height: 32rem;
   }
-  .carousel-item > img {
+  .carousel-item > .banner {
     position: absolute;
     top: 0;
     left: 0;

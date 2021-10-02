@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Allma</title>
     <link href="{{asset('fontawesome/css/all.css')}}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,10 +16,8 @@
     <link href="{{asset('css/empresa.css')}}" rel="stylesheet">
     <link href="{{asset('css/home.css')}}" rel="stylesheet">
     <link href="{{asset('css/nosotros.css')}}" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-   
+    <link href="{{asset('css/slick.css')}}" rel="stylesheet">
+    <link href="{{asset('css/slick-theme.css')}}" rel="stylesheet">
     @yield('assets')
 </head>
 
@@ -90,7 +88,7 @@
                     </ul>
                     <div class="redes-footer d-flex align-items-center py-3">
                         <div class="">
-                  <a href=" #" class="d-inline-block me-2"><img
+                            <a href=" #" class="d-inline-block me-2"><img
                                 src="{{('images/fb_blanco.png')}}" alt="Facebook"></a>
                             <a href="#" class="d-inline-block me-2"><img src="{{('images/ig_blanco.png')}}"
                                     alt="Instagram"></a>
@@ -116,7 +114,7 @@
                                 <input type="email" class="form-control">
                             </div>
                             <div class="">
-                    <button class=" btn btn-primary">Registro</button>
+                                <button class=" btn btn-primary">Registro</button>
                             </div>
                         </form>
                     </div>
@@ -128,17 +126,12 @@
         </div>
     </footer>
 
-     {{-- Scripts por pagina --}}
-     @yield('scripts')
-     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-     <script type="text/javascript" src="slick/slick.min.js"></script>
-   <script>
-         
-$('.single-item-rtl').slick({
-  rtl: true
-});
-   </script>
+    {{-- Scripts por pagina --}}
+    <script type="text/javascript" src="{{asset('js/jquery-3.5.1.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{asset('js/slick.min.js')}}"></script>
+    
+    @yield('scripts')
 </body>
 
 </html>
