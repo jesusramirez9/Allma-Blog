@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Letika')
+@section('title', 'Allma')
 
 @section('content_header')
 <a class="btn btn-secondary float-right" href="{{route('admin.posts.create')}}">Nuevo Post</a>

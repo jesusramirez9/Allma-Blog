@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Letika')
+@section('title', 'Allma')
 
 @section('content_header')
 <h1>Crear nuevo post</h1>
@@ -10,7 +10,6 @@
 <div class="card">
     <div class="card-body">
         {!! Form::open(['route' => 'admin.posts.store', 'autocomplete' => 'off', 'files'=>true]) !!}
-
 
         @include('admin.posts.partials.form')
 
@@ -40,9 +39,7 @@
 @stop
 @section('js')
 <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
-<script src="{{ asset('vendor/jQuery-Plugin-stringToSlug-1.3/jquery.stringToSlug.min.js') }}">
-
-</script>
+<script src="{{ asset('vendor/jQuery-Plugin-stringToSlug-1.3/jquery.stringToSlug.min.js') }}"></script>
 <script>
     $(document).ready(function() {
         $("#name").stringToSlug({
@@ -63,7 +60,8 @@
         .catch(error => {
             console.error(error);
         });
-//cambiar imagen
+    
+    //cambiar imagen
     document.getElementById("file").addEventListener('change', cambiarImagen);
 
     function cambiarImagen(event) {

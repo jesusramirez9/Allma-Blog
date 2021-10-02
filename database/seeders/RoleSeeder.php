@@ -15,7 +15,6 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-        //
       $role1 =  Role::create(['name'=>'Admin']);
       $role2 =  Role::create(['name'=>'Blogger']);
 
@@ -23,40 +22,28 @@ class RoleSeeder extends Seeder
         'name' => 'admin.home',
         'description' => 'Ver el dashboard'
       ])->syncRoles([$role1,$role2]);
-
       Permission::create([
         'name' => 'admin.users.index',
         'description' => 'Ver listado de usuarios'])->syncRoles([$role1]);
       Permission::create([
         'name' => 'admin.users.edit',
         'description' => 'Asignar usuario'])->syncRoles([$role1]);
-    
+      
+      //TESTIMONIALS
       Permission::create([
-        'name' => 'admin.categories.index',
-        'description' => 'Ver listado de categorias'])->syncRoles([$role1,$role2]);
+        'name' => 'admin.testimonials.index',
+        'description' => 'Ver listado de Testimonios'])->syncRoles([$role1,$role2]);
       Permission::create([
-        'name' => 'admin.categories.create',
-        'description' => 'Crear categoria'])->syncRoles([$role1]);
+        'name' => 'admin.testimonials.create',
+        'description' => 'Crear Testimonio'])->syncRoles([$role1,$role2]);
       Permission::create([
-        'name' => 'admin.categories.edit',
-        'description' => 'Editar categoria'])->syncRoles([$role1]);
+        'name' => 'admin.testimonials.edit',
+        'description' => 'Editar Testimonio'])->syncRoles([$role1,$role2]);
       Permission::create([
-        'name' => 'admin.categories.destroy',
-        'description' => 'Eliminar categoria'])->syncRoles([$role1]);
-
-      Permission::create([
-        'name' => 'admin.tags.index',
-        'description' => 'Ver listado de etiquetas'])->syncRoles([$role1,$role2]);
-      Permission::create([
-        'name' => 'admin.tags.create',
-        'description' => 'Crear etiqueta'])->syncRoles([$role1]);
-      Permission::create([
-        'name' => 'admin.tags.edit',
-        'description' => 'Editar etiqueta'])->syncRoles([$role1]);
-      Permission::create([
-        'name' => 'admin.tags.destroy',
-        'description' => 'Eliminar etiqueta'])->syncRoles([$role1]);
-
+        'name' => 'admin.testimonials.destroy',
+        'description' => 'Eliminar Testimonio'])->syncRoles([$role1,$role2]);
+      
+      //POSTS
       Permission::create([
         'name' => 'admin.posts.index',
         'description' => 'Ver listado de Post'])->syncRoles([$role1,$role2]);
@@ -69,8 +56,6 @@ class RoleSeeder extends Seeder
       Permission::create([
         'name' => 'admin.posts.destroy',
         'description' => 'Eliminar Post'])->syncRoles([$role1,$role2]);
-
-     
 
     }
 }

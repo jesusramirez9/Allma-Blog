@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Letika</b>SAC',
+    'logo' => '<b>Allma</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -244,46 +244,31 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Dashboard',
-            'route'         => 'admin.home',
-            'icon'        => 'fas fa-tachometer-alt fa-fw',
+            'text' => 'Dashboard',
+            'route' => 'admin.home',
+            'icon' => 'fas fa-tachometer-alt fa-fw',
             'can' => 'admin.home',
-
-
         ],
         [
-            'text'        => 'Usuarios',
-            'route'         => 'admin.users.index',
-            'icon'        => 'fas fa-users fa-fw',
+            'text' => 'Usuarios',
+            'route' => 'admin.users.index',
+            'icon' => 'fas fa-users fa-fw',
             'can' => 'admin.users.index',
-
-
         ],
         [
-            'text'        => 'Lista de roles',
-            'route'         => 'admin.roles.index',
-            'icon'        => 'fas fa-users-cog fa-fw',
-            // 'can' => 'admin.users.index',
-
-
+            'text' => 'Lista de roles',
+            'route' => 'admin.roles.index',
+            'icon' => 'fas fa-users-cog fa-fw',
+            'can' => 'admin.users.index',
         ],
-      
-        [
-            'text' => 'Categorías',
-            'route'  => 'admin.categories.index',
-            'icon' => 'fab fa-fw fa-buffer',
-            'active' => ['admin/categories*'],
-            'can' => 'admin.categories.index',
-        ],
-        [
-            'text' => 'Etiquetas',
-            'route'  => 'admin.tags.index',
-            'icon' => 'far fa-fw fa-bookmark',
-            'active' => ['admin/tags*'],
-            'can' => 'admin.tags.index',
-        ],
-
-        ['header' => 'OPCIONES DE BLOG'],
+        // [
+        //     'text' => 'Categorías',
+        //     'route'  => 'admin.categories.index',
+        //     'icon' => 'fab fa-fw fa-buffer',
+        //     'active' => ['admin/categories*'],
+        //     'can' => 'admin.categories.index',
+        // ],
+        ['header' => 'BLOG'],
         [
             'text'       => 'Lista de post',
             'icon' => 'fas fa-fw fa-clipboard',
@@ -291,12 +276,24 @@ return [
             'can' => 'admin.posts.index',
         ],
         [
-            'text'       => 'Crear nuevo post',
+            'text' => 'Crear nuevo post',
             'icon' => 'fas fa-fw fa-file',
-            'route'        => 'admin.posts.create',
+            'route' => 'admin.posts.create',
             'can' => 'admin.posts.create',
         ],
-
+        ['header' => 'TESTIMONIOS'],
+        [
+            'text' => 'Lista de testimonios',
+            'icon' => 'fas fa-fw fa-clipboard',
+            'route' => 'admin.testimonials.index',
+            'can' => 'admin.testimonials.index',
+        ],
+        [
+            'text' => 'Crear nuevo testimonio',
+            'icon' => 'fas fa-fw fa-file',
+            'route' => 'admin.testimonials.create',
+            'can' => 'admin.testimonials.create',
+        ],
     ],
 
     /*

@@ -7,10 +7,10 @@
     @enderror
 
 </div>
+
 <div class="form-group">
     {!! Form::label('slug', 'Nombre:') !!}
     {!! Form::text('slug', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el slug del post', 'readonly']) !!}
-
 
     @error('slug')
         <small class="text-danger">{{ $message }}</small>
@@ -18,31 +18,8 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('category_id', 'categoría') !!}
-    {!! Form::select('category_id', $categories, null, ['class' => 'form-control']) !!}
-
-    @error('category_id')
-        <small class="text-danger">{{ $message }}</small>
-    @enderror
-</div>
-
-<div class="form-group">
-    <p class="font-weight-bold">Etiquetas</p>
-    @foreach ($tags as $tag)
-        <label class="mr-2">
-            {!! Form::checkbox('tags[]', $tag->id, null) !!}
-            {{ $tag->name }}
-        </label>
-    @endforeach
-
-    @error('tags')
-        <br>
-        <small class="text-danger">{{ $message }}</small>
-    @enderror
-</div>
-<div class="form-group">
     <p class="font-weight-bold"> Estado</p>
-    <label>
+    <label class="mr-3">
         {!! Form::radio('status', 1, true) !!}
         Borrador
     </label>
@@ -60,30 +37,25 @@
 <div class="row mb-3">
     <div class="col">
         <div class="image-wrapper">
-            @isset ($post->image)
-                <img id="picture" src="{{Storage::url($post->image->url)}}" alt="">
+            @isset($post->image)
+                <img id="picture" src="{{ Storage::url($post->image->url) }}" alt="">
             @else
-            <img id="picture" src="https://cdn.pixabay.com/photo/2020/11/07/10/36/motorcycle-5720553_960_720.jpg" alt="">
+                <img id="picture" src="https://cdn.pixabay.com/photo/2020/11/07/10/36/motorcycle-5720553_960_720.jpg"
+                    alt="">
             @endisset
         </div>
 
     </div>
     <div class="col">
         <div class="form-group">
-            {!! Form::label('file', 'Imagen que se mostrará en el post') !!}
-            {!! Form::file('file', ['class' => 'form-control-file','accept'=>'image/*']) !!}
+            {!! Form::label('file', 'Seleccione la imagen que se mostrará en el post') !!}
+            {!! Form::file('file', ['class' => 'form-control-file', 'accept' => 'image/*']) !!}
 
             @error('file')
-            <small class="text-danger">{{$message}}</small>
-        @enderror
+                <small class="text-danger">{{ $message }}</small>
+            @enderror
         </div>
 
-       
-
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquam vitae aliquid
-            necessitatibus veritatis, quasi recusandae enim iure facilis tenetur labore harum architecto error
-            quae deserunt velit repellat at facere!</p>
     </div>
 </div>
 
@@ -95,6 +67,7 @@
         <small class="text-danger">{{ $message }}</small>
     @enderror
 </div>
+
 <div class="form-group">
     {!! Form::label('body', 'Cuerpo del Post:') !!}
     {!! Form::textarea('body', null, ['class' => 'form-control']) !!}

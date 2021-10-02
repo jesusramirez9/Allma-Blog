@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PostRequest extends FormRequest
+class TestimonialRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,24 +22,19 @@ class PostRequest extends FormRequest
      * @return array
      */
     public function rules(){
-        $post = $this->route()->parameter('post'); //null
+        $testimonial = $this->route()->parameter('testimonial'); //null
 
         $rules = [
             'name'=>'required',
-            'slug'=>'required|unique:posts',
+            //'slug'=>'required|unique:posts',
+            'occupation'=>'required',
+            'message'=>'required',
             'status'=>'required|in:1,2',
             'file'=>'image'
         ];
 
-        if($post){
-            $rules['slug'] = 'required|unique:posts,slug,'.$post->id;
-        }
-
-        if ($this->status ==2) {
-            $rules = array_merge($rules,[
-                'extract'=>'required',
-                'body'=>'required'
-            ]);
+        if($testimonial){
+            //$rules['slug'] = 'required|unique:posts,slug,'.$post->id;
         }
 
         return $rules;
