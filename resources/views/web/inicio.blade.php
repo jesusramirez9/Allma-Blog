@@ -19,10 +19,24 @@
 
             dotsClass: 'slick-dots',
             infinite: true,
-            responsive: [
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
 
+                    }
+                },
                 {
                     breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
@@ -135,132 +149,110 @@
                 </div>
             </div>
         </div><br><!-- /.container -->
-        <div class="container pt-5 pb-5">
+        <div class="container pt-5 pb-5 ">
             <div class="text-center">
                 <h2 class="fw-sesa">TESTIMONIOS</h2>
                 <h3 class="flics"><b>FELICES</b></h3>
             </div>
-            <div class="position-relative">
+ 
+            <div class="position-relative testimt">
                 <div class="testimonio">
-                    <div class="card mb-3 custom-card text-white position-relative cardi1">
-                        <span class="custom-img position-absolute top-0 start-100 translate-middle badge">
-                            <img src="{{ asset('images/assets/comillas.png') }}" alt="quote">
-                            <span class="visually-hidden">quote</span>
-                        </span>
-                        <div class="row g-0">
-                            <div class="col-md-4 ima">
-                                <img src="{{ asset('images/assets/janice_ortiz.png') }}" class="rounded-start"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="text-center tarjeta">
-                                    <br>
-                                    <p class="card-text">Estuve buscando como entrenar a mis Distribuidores y
-                                        brindarles
-                                        herramientas de negocio y de desarrollo personal para que puedan desarrollarse tanto
-                                        profesionalmente como personalmente.
-                                    </p>
-                                    <br>
-                                    <h4 style="color: black; font-size: 18px;"><b>Janice Ortiz Clark</b></h4>
-                                    <h4 style="font-size: 20px;">TIENS Group</h4><br>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
-                                        testimonio</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 custom-card text-white cardi2">
-                        <span class="custom-img position-absolute top-0 start-100 translate-middle badge">
-                            <img src="{{ asset('images/assets/comillas.png') }}" alt="quote">
-                            <span class="visually-hidden">quote</span>
-                        </span>
-                        <div class="row g-0">
-                            <div class="col-md-4 ima">
-                                <img src="{{ asset('images/assets/foto_fredy.png') }}" class="rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="text-center tarjeta">
-                                    <br>
-                                    <p class="card-text">Me encontraba en la búsqueda de mis áreas de mejora y de poder
-                                        conocer
-                                        herramientas de autogestión y en Allma encontré alternativas para gestionar mis
-                                        actividades, mis recursos y mis emociones.
-                                    </p>
-                                    <br>
-                                    <h4 style="color: black; font-size: 18px;"><b>Fredy Ochoa Del Aguila</b></h4>
-                                    <h4 style="font-size: 20px;">Actor</h4><br>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal2">Leer
-                                        testimonio</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 custom-card text-white position-relative cardi1">
-                        <span class="custom-img position-absolute top-0 start-100 translate-middle badge">
-                            <img src="{{ asset('images/assets/comillas.png') }}" alt="quote">
-                            <span class="visually-hidden">quote</span>
-                        </span>
-                        <div class="row g-0">
-                            <div class="col-md-4 ima">
-                                <img src="{{ asset('images/assets/janice_ortiz.png') }}" class="rounded-start"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="text-center tarjeta">
-                                    <br>
-                                    <p class="card-text">Estuve buscando como entrenar a mis Distribuidores y
-                                        brindarles
-                                        herramientas de negocio y de desarrollo personal para que puedan desarrollarse tanto
-                                        profesionalmente como personalmente.
-                                    </p>
-                                    <br>
-                                    <h4 style="color: black; font-size: 18px;"><b>Janice Ortiz Clark</b></h4>
-                                    <h4 style="font-size: 20px;">TIENS Group</h4><br>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
-                                        testimonio</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 custom-card text-white cardi2">
-                        <span class="custom-img position-absolute top-0 start-100 translate-middle badge">
-                            <img src="{{ asset('images/assets/comillas.png') }}" alt="quote">
-                            <span class="visually-hidden">quote</span>
-                        </span>
-                        <div class="row g-0">
-                            <div class="col-md-4 ima">
-                                <img src="{{ asset('images/assets/foto_fredy.png') }}" class="rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="text-center tarjeta">
-                                    <br>
-                                    <p class="card-text">Me encontraba en la búsqueda de mis áreas de mejora y de poder
-                                        conocer
-                                        herramientas de autogestión y en Allma encontré alternativas para gestionar mis
-                                        actividades, mis recursos y mis emociones.
-                                    </p>
-                                    <br>
-                                    <h4 style="color: black; font-size: 18px;"><b>Fredy Ochoa Del Aguila</b></h4>
-                                    <h4 style="font-size: 20px;">Actor</h4><br>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal2">Leer
-                                        testimonio</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
+                    <div>
+                        <div class="row pdlg">
+                            <div class="col-12 col-md-4 np nm">
+                                <div class="img_testimonio"
+                                    style="background-image: url('{{ asset('images/assets/janice_ortiz.png') }}')">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 np nm">
+                                <div class="bg-azulin text-center contntest h-100">
+                                    <p class="txtwhite">Estuve buscando como entrenar a mis Distribuidores y
+                                        brindarles
+                                        herramientas de negocio y de desarrollo personal para que puedan desarrollarse tanto
+                                        profesionalmente como personalmente.
+                                    </p>
+                                    <p class="m-0 txt-vldk">Janice Ortiz Clark</p>
+                                    <p class="txtwhite fwbolddd">TIENS Group</p>
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                        testimonio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row pdlg">
+                            <div class="col-12 col-md-4 np nm">
+                                <div class="img_testimonio"
+                                    style="background-image: url('{{ asset('images/assets/foto_fredy.png') }}')">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 np nm">
+                                <div class="bg-azulin text-center contntest h-100">
+                                    <p class="txtwhite">Me encontraba en la búsqueda de mis áreas de mejora y de poder
+                                        conocer herramientas de autogestión y en Allma encontré alternativas para gestionar
+                                        mis actividades, mis recursos y mis emociones.
+                                    </p>
+                                    <p class="m-0 txt-vldk">Fredy Ochoa Del Aguila</p>
+                                    <p class="txtwhite fwbolddd">Actor</p>
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                        testimonio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row pdlg">
+                            <div class="col-12 col-md-4 np nm">
+                                <div class="img_testimonio"
+                                    style="background-image: url('{{ asset('images/assets/janice_ortiz.png') }}')">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 np nm">
+                                <div class="bg-azulin text-center contntest h-100">
+                                    <p class="txtwhite">Estuve buscando como entrenar a mis Distribuidores y
+                                        brindarles
+                                        herramientas de negocio y de desarrollo personal para que puedan desarrollarse tanto
+                                        profesionalmente como personalmente.
+                                    </p>
+                                    <p class="m-0 txt-vldk">Janice Ortiz Clark</p>
+                                    <p class="txtwhite fwbolddd">TIENS Group</p>
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                        testimonio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row pdlg">
+                            <div class="col-12 col-md-4 np nm">
+                                <div class="img_testimonio"
+                                    style="background-image: url('{{ asset('images/assets/foto_fredy.png') }}')">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 np nm">
+                                <div class="bg-azulin text-center contntest h-100">
+                                    <p class="txtwhite">Me encontraba en la búsqueda de mis áreas de mejora y de poder
+                                        conocer herramientas de autogestión y en Allma encontré alternativas para gestionar
+                                        mis actividades, mis recursos y mis emociones.
+                                    </p>
+                                    <p class="m-0 txt-vldk">Fredy Ochoa Del Aguila</p>
+                                    <p class="txtwhite fwbolddd">Actor</p>
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                        testimonio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                {{-- <div class="arrow_prev position-absolute prev1">
+                <div class="arrow_prev position-absolute prev1">
                     <i class="fas fa-chevron-left"></i>
                 </div>
                 <div class="arrow_next position-absolute prev2">
                     <i class="fas fa-chevron-right"></i>
-                </div> --}}
+                </div>
             </div>
 
-            <div>
-
-            </div>
 
         </div><!-- /.container -->
 

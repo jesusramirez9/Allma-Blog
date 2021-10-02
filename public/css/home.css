@@ -4,6 +4,39 @@
     line-height: 40px;
     margin-top: 4rem !important;
 }
+.contntest {
+    padding: 1.5rem 2rem;
+}
+.bg-azulin {
+    background-color: #4d8be0;
+}
+.txtwhite {
+    color: white;
+}
+.fwbolddd {
+    font-weight: bold;
+}
+.txt-vldk {
+    color: black;
+    font-weight: 700;
+}
+.np {
+    padding-left: 0;
+    padding-right: 0;
+}
+.nm {
+    margin-left: 0;
+    margin-right: 0;
+}
+.img_testimonio {
+    width: 100%;
+    height: 10rem;
+}
+.img_testimonio {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .btn_mx {
     background-color: #447bcc;
     color: #fff;
@@ -16,10 +49,10 @@
     font-weight: 600;
 }
 .fw-sesa {
-  font-weight: 600;
+    font-weight: 600;
 }
-.flics{
-  font-family: 'openExtraBold';
+.flics {
+    font-family: "openExtraBold";
 }
 .btn-close {
     position: absolute;
@@ -27,10 +60,10 @@
     top: 10px;
 }
 .bg-azulino {
-    background-color: #4D8BE0;
+    background-color: #4d8be0;
 }
 .custom-card {
-    background-color: #4D8BE0;
+    background-color: #4d8be0;
     max-width: 40em;
     border: white;
     border-radius: 0.7rem;
@@ -39,7 +72,7 @@
 .text-center {
     text-align: center !important;
     position: relative;
-    left: -15px;
+   
 }
 
 .mano {
@@ -60,7 +93,7 @@
 .cambio3 button {
     text-align: right;
     padding: 1px 10px;
-    background-color: #4D8BE0;
+    background-color: #4d8be0;
     border: #fff 1px solid;
     position: relative;
     float: right;
@@ -186,17 +219,30 @@
 }
 
 .custom-card {
-
-  margin: 1.4rem 0;
-
+    margin: 1.4rem 0;
 }
 
 @media (min-width: 320px) {
     .imgslide1 {
         height: 25rem;
     }
-    .marketing{
-      margin-top: 1.5rem;
+    .marketing {
+        margin-top: 1.5rem;
+    }
+    .img_testimonio {
+        height: 18rem;
+    }
+    .prev2 {
+        bottom: 26px;
+        z-index: 999;
+        right: 16px;
+        color: white;
+    }
+    .prev1 {
+        bottom: 26px;
+        z-index: 999;
+        left: 16px;
+        color: white;
     }
 }
 @media (min-width: 375px) {
@@ -210,8 +256,28 @@
     .imgslide1 {
         height: 20rem;
     }
-    .marketing{
-      margin-top: 2.5rem;
+    .marketing {
+        margin-top: 2.5rem;
+    }
+    .img_testimonio {
+        height: 100%;
+    }
+    .contntest {
+        padding: 4.2rem 2rem;
+    }
+    .prev2 {
+        bottom: 20%;
+        z-index: 999;
+        right: 16px;
+        color: white;
+    }
+    .prev1 {
+        bottom: 20%;
+        z-index: 999;
+        left: 33%;
+    }
+    .testimt{
+        padding: 4rem 0;
     }
 }
 @media (min-width: 1024px) {
@@ -219,21 +285,72 @@
         height: 27rem;
     }
     .banner-home h1 {
-   
-      margin-bottom: 10.8px;
-     
-  }
-  .marketing{
-    margin-top: 3rem;
-  }
+        margin-bottom: 10.8px;
+    }
+    .marketing {
+        margin-top: 3rem;
+    }
+    .pdlg {
+        padding: 0 2rem;
+    }
+    .prev2 {
+        bottom: 45%;
+        z-index: 999;
+        right: -23px;
+        color: white;
+        background: #4d8be0;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.2rem;
+    }
+    .prev1 {
+       
+      
+        background: #4d8be0;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.2rem;
+        bottom: 45%;
+        z-index: 999;
+        left: -3%;
+    }
 }
 @media (min-width: 1200px) {
     .banner-home h1 {
         font-size: 3.5rem;
-    }.revo_inte {
-      font-size: 3.5rem !important;
-      text-shadow: 1px 2px 6px #5d5d5d !important;
-  }
+    }
+    .revo_inte {
+        font-size: 3.5rem !important;
+        text-shadow: 1px 2px 6px #5d5d5d !important;
+    }
+    .prev1 {
+        background: #4d8be0;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.2rem;
+        bottom: 45%;
+        z-index: 999;
+        left: -2.3%;
+    }
+}
+@media(min-width:1300px){
+    .pdlg {
+        padding: 0 3rem;
+    }
+    .prev1 {
+        background: #4d8be0;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.2rem;
+        bottom: 45%;
+        z-index: 999;
+        left: -4%;
+    }
+    .prev2 {
+        bottom: 45%;
+        z-index: 999;
+        right: -44px;
+        color: white;
+        background: #4d8be0;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.2rem;
+    }
 }
 @media (min-width: 1440px) {
     .imgslide1 {
@@ -286,7 +403,6 @@
     .text-center {
         text-align: center !important;
         position: relative;
-        left: 0px;
     }
 
     .card3 {
@@ -296,6 +412,7 @@
         top: 30px;
     }
 }
+
 
 @media (max-width: 1000px) {
     .btn-close {
@@ -369,7 +486,7 @@
     .cambio3 button {
         text-align: right;
         padding: 1px 10px;
-        background-color: #4D8BE0;
+        background-color: #4d8be0;
         border: #fff 1px solid;
         position: relative;
         float: right;
@@ -426,7 +543,6 @@
     .text-center {
         text-align: center !important;
         position: relative;
-        left: -15px;
     }
 }
 
@@ -554,7 +670,7 @@
     .text-center {
         text-align: center !important;
         position: relative;
-        left: -10px;
+       
     }
 }
 
@@ -635,7 +751,6 @@
         top: 0;
         left: 0;
         min-width: 100%;
-        
     }
 
     .carousel-caption {
@@ -648,7 +763,6 @@
     }
 
     .carousel-item {
-     
     }
 
     .cuadro img {
@@ -727,7 +841,6 @@
     .text-center {
         text-align: center !important;
         position: relative;
-        left: 0px;
     }
 }
 
@@ -807,7 +920,6 @@
         top: 0;
         left: 0;
         min-width: 100%;
-      
     }
 
     .carousel-caption {
@@ -820,7 +932,6 @@
     }
 
     .carousel-item {
-      
     }
 
     .cuadro img {
@@ -898,6 +1009,5 @@
     .text-center {
         text-align: center !important;
         position: relative;
-        left: 0px;
     }
 }
