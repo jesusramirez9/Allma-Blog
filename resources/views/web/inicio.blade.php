@@ -15,34 +15,33 @@
             infinite: true,
             slidesToShow: 2,
             slidesToScroll: 2,
-            autoplay: true,
-            autoplaySpeed: 2000,
-
+            
+            autoplaySpeed: 5000,
             dotsClass: 'slick-dots',
             infinite: true,
             responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
 
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
                 }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
                 // instead of a settings object
@@ -152,7 +151,6 @@
  
             <div class="position-relative testimt">
                 <div class="testimonio">
-
                     <div>
                         <div class="row pdlg">
                             <div class="col-12 col-md-4 np nm">
@@ -169,7 +167,7 @@
                                     </p>
                                     <p class="m-0 txt-vldk">Janice Ortiz Clark</p>
                                     <p class="txtwhite fwbolddd">TIENS Group</p>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#modal1">Leer
                                         testimonio</button>
                                 </div>
                             </div>
@@ -190,7 +188,7 @@
                                     </p>
                                     <p class="m-0 txt-vldk">Fredy Ochoa Del Aguila</p>
                                     <p class="txtwhite fwbolddd">Actor</p>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#modal2">Leer
                                         testimonio</button>
                                 </div>
                             </div>
@@ -212,7 +210,7 @@
                                     </p>
                                     <p class="m-0 txt-vldk">Janice Ortiz Clark</p>
                                     <p class="txtwhite fwbolddd">TIENS Group</p>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#modal1">Leer
                                         testimonio</button>
                                 </div>
                             </div>
@@ -233,7 +231,7 @@
                                     </p>
                                     <p class="m-0 txt-vldk">Fredy Ochoa Del Aguila</p>
                                     <p class="txtwhite fwbolddd">Actor</p>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#modal2">Leer
                                         testimonio</button>
                                 </div>
                             </div>
@@ -252,22 +250,18 @@
         </div><!-- /.container -->
 
         <!-- Modal1 -->
-        <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-lg modal-dialog-centered">
                 <div class="modal-content custom-modal">
                     <div class="modal-body p-0">
-                        <div class="card modal-body text-white position-relative p-0">
-                            <div class="row g-0">
-                                <div class="col-md-4 ima2">
-                                    <img src="{{ asset('images/assets/janice_ortiz.png') }}" class="rounded-start"
-                                        alt="...">
-                                </div>
-                                <div class="col-md-8 card3">
-                                    <div class="card-body text-center"><br>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="card modal-body text-white position-relative p-0 border-0">
+                            <div class="row mx-0">
+                                <div class="col-md-4 modal-home-img d-none d-md-block" style="background-image: url({{asset('images/assets/janice_ortiz.png')}})"></div>
+                                <div class="col-md-8 card3 px-4">
+                                    <div class="card-body text-center px-3"><br>
                                         <h4 class="letra7"><b>Janice Ortiz Clark</b></h4>
                                         <h4 class="letra8">TIENS Group</h4><br><br>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
                                         <p class="card-text letra9">Estuve buscando como entrenar a mis Distribuidores y
                                             brindarles
                                             herramientas de negocio y de desarrollo personal para que puedan desarrollarse
@@ -285,9 +279,8 @@
                                             Se lo recomendaría a mi cualquier persona que busque expandir su visión y
                                             aprender a manejar
                                             mejor su estado emocional.
+                                            <br><br>
                                         </p>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -297,22 +290,18 @@
             </div>
         </div>
         <!-- Modal2 -->
-        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-lg modal-dialog-centered">
                 <div class="modal-content custom-modal">
                     <div class="modal-body p-0">
-                        <div class="card modal-body text-white position-relative p-0">
-                            <div class="row g-0">
-                                <div class="col-md-4 ima2">
-                                    <img src="{{ asset('images/assets/foto_fredy.png') }}" class="rounded-start"
-                                        alt="...">
-                                </div>
-                                <div class="col-md-8 card3">
-                                    <div class="card-body text-center"><br>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="card modal-body text-white position-relative p-0 border-0">
+                            <div class="row mx-0">
+                                <div class="col-md-4 modal-home-img d-none d-md-block" style="background-image: url({{asset('images/assets/foto_fredy.png')}})"></div>
+                                <div class="col-md-8 card3 px-4">
+                                    <div class="card-body text-center px-3"><br>
                                         <h4 class="letra7"><b>Fredy Ochoa Del Aguila</b></h4>
                                         <h4 class="letra8">Actor</h4><br><br>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
                                         <p class="card-text letra9">Me encontraba en la búsqueda de mis áreas de mejora y
                                             de
                                             poder conocer
@@ -331,10 +320,8 @@
                                             Se lo recomendaría a mi cualquier persona que busque expandir su visión y
                                             aprender a manejar
                                             mejor su estado emocional.
-
+                                            <br><br>
                                         </p>
-
-
                                     </div>
                                 </div>
                             </div>

@@ -96,15 +96,6 @@ body {
   width: 84px;
 }
 
-.custom-modal{
-  background-color: none;
-}
-.custom-modal .modal-body{
-  background-color: #0178bc;
-  max-width: 32em;
-  border: white;
-  background-color: none;
-}
 .custom-header {
   background-color: white;
 }
