@@ -1,23 +1,18 @@
 @extends('layouts.webapp')
 @section('content')
-    <div id="myCarousel" class=" slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%"></rect>
-                </svg>
-                <img src="{{ asset('images/blog/slider.png') }}" class="img-fluid" alt="slider">
-                <div class="container">
-                    <div class="centrado contac_txt">
-                        <h1 class="txtcontc1">Blog</h1>
-                        <p class="txtcontc2">Consejos y noticias</p>
-                    </div>
+<div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item imgslide1 active"
+            style="background-image: url('{{ asset('images/blog/slider.png') }}')">
+            <div class="container">
+                <div class="centrado contac_txt">
+                    <h1 class="txtcontc1">Blog</h1>
+                    <p class="txtcontc2">Consejos y noticias</p>
                 </div>
             </div>
         </div>
-
     </div>
+</div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
