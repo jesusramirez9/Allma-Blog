@@ -1,14 +1,10 @@
 @extends('layouts.webapp')
 
 @section('content')
-    <div id="myCarousel" class=" slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%"></rect>
-                </svg>
-                <img src="{{ asset('images/programa/slider.png') }}" class="img-fluid" alt="slider">
+            <div class="carousel-item imgslide1 active"
+                style="background-image: url('{{ asset('images/programa/slider.png') }}')">
                 <div class="container">
                     <div class="centrado contac_txt">
                         <h1 class="txtcontc1">NUESTROS</h1>
@@ -79,28 +75,40 @@
                             <input type="email" class="form-control  inptprgrs " id="exampleFormControlInput1"
                                 placeholder="">
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label text-black fwbold">Correo:</label>
-
-                            <input type="text" class="form-control  inptprgrs " id="exampleFormControlInput1"
-                                placeholder="">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1"
+                                    class="form-label text-black fwbold">Dirección:</label>
+                                <input type="text" name="empresa" class="form-control  inptprgrs "
+                                    id="exampleFormControlInput1" required>
+                                @error('empresa')
+                                    <p><strong>{{ $message }}</strong></p>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label text-black fwbold">Teléfonos:</label>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1"
+                                    class="form-label text-black fwbold">Correo:</label>
 
-                            <input type="number" class="form-control inptprgrs " id="exampleFormControlInput1"
-                                placeholder="">
+                                <input type="email" name="correo" class="form-control  inptprgrs "
+                                    id="exampleFormControlInput1" required>
+                                @error('correo')
+                                    <p><strong>{{ $message }}</strong></p>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label text-black fwbold">Mensaje:</label>
-                            <textarea class="form-control form-msj inptprgrs" id="exampleFormControlTextarea1"
-                                rows="3"></textarea>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1"
+                                    class="form-label text-black fwbold">Teléfonos:</label>
+
+                                <input type="number" name="celular" class="form-control inptprgrs "
+                                    id="exampleFormControlInput1" placeholder="" required>
+                                @error('celular')
+                                    <p><strong>{{ $message }}</strong></p>
+                                @enderror
+                            </div>
                         </div>
                     </div>
                     <div class="text-end">

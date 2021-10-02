@@ -2,14 +2,10 @@
 @section('content')
 
 <div>
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner cuadro">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%"></rect>
-                </svg>
-                <img src="{{asset('images/assets/SLIDER.png')}}" class="img-fluid" alt="slider">
+    <div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item imgslide1 active"
+                style="background-image: url('{{asset('images/assets/SLIDER.png')}}')">
                 <div class="container">
                     <div class="centrado centro">
                         <h1>Tenemos el reto de Impulsar tu revolución interior</h1>
@@ -78,10 +74,10 @@
                 </p>
 
                 <div class="redes">
-                    <a href="#" class="d-inline-block me-2"><img src="{{asset('images/nosotros/icon_fb2.png')}}"
+                    <a href="https://www.facebook.com/allma.pe" target="_blank" class="d-inline-block me-2"><img src="{{asset('images/nosotros/icon_fb2.png')}}"
                             alt="Facebook"></a>
-                    <a href="#" class="d-inline-block me-2"><img src="{{asset('images/nosotros/ig_2.png')}}" alt="Instagram"></a>
-                    <a href="#" class="d-inline-block me-2"><img src="{{asset('images/nosotros/In_icon_2.png')}}"
+                    <a href="https://www.instagram.com/allma.pe/" target="_blank" class="d-inline-block me-2"><img src="{{asset('images/nosotros/ig_2.png')}}" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/company/allmaescuela/" target="_blank" class="d-inline-block me-2"><img src="{{asset('images/nosotros/In_icon_2.png')}}"
                             alt="Linkedin"></a>
                 </div>
 
@@ -123,22 +119,16 @@
 
 
                 <div class="redes2">
-                    <a href="#" class="d-inline-block me-2"><img src="{{asset('images/nosotros/icon_fb2.png')}}"
+                    <a href="https://www.facebook.com/allma.pe" target="_blank" class="d-inline-block me-2"><img src="{{asset('images/nosotros/icon_fb2.png')}}"
                             alt="Facebook"></a>
-                    <a href="#" class="d-inline-block me-2"><img src="{{asset('images/nosotros/ig_2.png')}}" alt="Instagram"></a>
-                    <a href="#" class="d-inline-block me-2"><img src="{{asset('images/nosotros/In_icon_2.png')}}"
+                    <a href="https://www.instagram.com/allma.pe/" target="_blank" class="d-inline-block me-2"><img src="{{asset('images/nosotros/ig_2.png')}}" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/company/allmaescuela/" target="_blank" class="d-inline-block me-2"><img src="{{asset('images/nosotros/In_icon_2.png')}}"
                             alt="Linkedin"></a>
                 </div>
             </div>
             <div class="col-md-5 contenido6">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                    width="520" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                    aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
-
+               
+                <img src="{{asset('images/nosotros/alisonxd.jpeg')}}" alt="">
             </div>
 
         </div>

@@ -1,24 +1,21 @@
 @extends('layouts.webapp')
 @section('content')
 
-    <div id="myCarousel" class=" slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%"></rect>
-                </svg>
-                <img src="{{ asset('images/empresa/SLIDER_.png') }}" class="img-fluid" alt="slider">
-                <div class="container">
-                    <div class="centrado centradoempresa txt-empresa">
-                        <p class="m-0">Consultoría en </p>
-                        <p class="m-0">INTELIGENCIA EMOCIONAL</p>
-                        <P class="m-0">Y BIENESTAR LABORAL 360°</P>
-                    </div>
+<div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item imgslide1 active"
+            style="background-image: url('{{asset('images/empresa/SLIDER_.png')}}')">
+            <div class="container">
+                <div class="centrado centradoempresa txt-empresa">
+                    <p class="m-0">Consultoría en </p>
+                    <p class="m-0">INTELIGENCIA EMOCIONAL</p>
+                    <P class="m-0">Y BIENESTAR LABORAL 360°</P>
                 </div>
             </div>
         </div>
     </div>
+</div>
+ 
 
     <div class="container">
         <p class="text-justify text-empre1">En la Consultoría de inteligencia emocional y bienestar laboral 360° analizaremos desde
@@ -153,12 +150,12 @@
 
                 <img src="{{ asset('images/empresa/slider_2.png') }}" class="img-fluid w-100 h-100" alt="slider">
                 <div class="container">
-                    <div class="centrado">
+                    <div class="centrado centraddemo">
                         <p class="fwbold text-center">DEMO</p>
                         <p class="m-0 tx-cntr">Si tienes dudas acerca de nuestra <span class="fwbold">consultoría en Inteligencia Emocional,</span> </p>
                         <p class="tx-cntr">pídenos una DEMO y te brindaremos un espacio de muestra para que podamos conocernos.</p>
                         <P class="fwbold tx-cntr">Nos pondremos en contacto para organizar tu demo.</P>
-                        <div class="d-flex align-items-center ">
+                        <div class="d-flex align-items-center btnesrx">
                             <div class="position-relative">
                                 <a href=" " class="btn btn-outline-primary btn_empresa h-50">Ponte en contacto aquí</a>
                                 <img src="{{ asset('images/empresa/click_hand.png') }}"
