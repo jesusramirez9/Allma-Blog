@@ -44,6 +44,11 @@ Route::get('/blog', function () {
     return view('web.blog');
 })->name('web.blog');
 
+Route::get('/blog/detail', function () {
+    return view('web.blogshow');
+})->name('web.blogdetail');
+
+
 Route::get('/contacto', function () {
     return view('web.contacto');
 })->name('web.contacto');
