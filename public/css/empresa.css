@@ -129,49 +129,17 @@ color: white;
 
 .img-square{
     width: 100%;
-    height: 300px;
+    height: 200px;
     position: relative;
     background-size: cover;
     background-position: center;
 }
-.program-item{
-    margin: 0 15px;
-    padding: 40px 0;
-}
-.program1 .slick-active.slick-center{
-    position: relative;
-}
-.program1 .slick-active.slick-center::after{
-    content: '';
-    display: block;
-    width: 418px;
-    height: 8px;
-    background-color: #427CCE;
-    position: absolute;
-    bottom: 0;
-    left: -55px;
-    z-index: 10;
-    transition: all 300ms ease;
-}
-.program1 .slick-active.slick-center > div {
-    width: 100%;
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    color: #e67e22;
-    opacity: 1;
-    transform: scale(1.5);
-    transition: all 300ms ease;
-    z-index: 9;
-    border-left: 15px solid #fff;
-    border-right: 15px solid #fff;
-}
+
 .program1 {
     transition: all 300ms ease;
 }
 .program1 h2{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 3.5rem 0;
     font-family: 'openBold';
     color: #4F8AE4;
@@ -180,6 +148,12 @@ color: white;
     background-color: #4F8AE4;
     border-color: #4F8AE4;
     padding: .5rem 1rem;
+}
+.text-programs{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #3e3e3e;
+    margin-bottom: 2rem;
 }
 .slick-flechas{
     margin-top: 4rem;
@@ -194,6 +168,9 @@ color: white;
     vertical-align: middle;
     color: #4f8ae4;
     margin: 0 15px;
+}
+.slick-list{
+    padding: 0 !important;
 }
 
 
@@ -283,7 +260,7 @@ color: white;
         margin-bottom: 0.8rem;
     }
     .spcrm5{
-        margin: 1.5rem 0rem 1rem 0;;
+        margin: 1.5rem 0rem 5rem;
     }
     .mtd-sa{
         margin-top: 2rem;
@@ -302,7 +279,7 @@ color: white;
         font-weight: 500 !important;
     }
     .mrgprogr{
-        margin-bottom: 2rem;
+        margin: 3rem 0 2rem;
     }
     .fot2prog{
         margin-top: 2rem;
@@ -340,13 +317,11 @@ color: white;
 
 @media (min-width: 768px) {
     .revo_inte{
-    font-size: 3rem !important;
-    text-shadow: 1px 2px 6px #5d5d5d !important;
-  
+        font-size: 3rem !important;
+        text-shadow: 1px 2px 6px #5d5d5d !important;
     }
-    
     .mrgprogr{
-        margin-bottom: 4rem;
+        margin: 4rem 0;
     }
     .txtprogr1,.txtprogr2{
         text-align: start;
@@ -356,7 +331,6 @@ color: white;
     }
     .fstxtblux{
         text-align: start;
-       
     }
     .frm-nc{
         padding: .375rem 0rem;
@@ -388,7 +362,6 @@ color: white;
     .txt-compromis{
         font-size: 1.4rem;
         padding: 1rem 0;
-     
     }  
     .mr_progres2{
         margin-top: 0rem;
@@ -398,47 +371,67 @@ color: white;
     }
     .txtcontc1{
         font-size: 3rem;
-        }
-        .contac_txt{
-            top: 59% !important;
-            left: 28% !important;
-        }
-        .mrl{
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-        }
-        .indx-blg{
-            text-align: start;
-            margin-top: 2.2rem;
-        }
-        .mrowblg{
-            margin-bottom: 4rem;
-        }
-        .bluzol {
-            
-            font-size: 1.5rem;
-        }
-        .mrg-indtl{
-            margin-top: 4rem;
-        }
-        .hrmg{
-            margin-top: 2rem;
-            margin-bottom: 1.7rem;
-        }
-        .mbconcts{
-            margin-bottom: 2.5rem;
-        }
-        .fot2prog{
-            margin-top: 0rem;
-        }
-        .centraddemo{
-            width: 90%;
-        }
-        .btnesrx{
-            margin-left: 7rem;
-            margin-top: 3rem;
-        }
     }
+    .contac_txt{
+        top: 59% !important;
+        left: 28% !important;
+    }
+    .mrl{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .indx-blg{
+        text-align: start;
+        margin-top: 2.2rem;
+    }
+    .mrowblg{
+        margin-bottom: 4rem;
+    }
+    .bluzol {
+        font-size: 1.5rem;
+    }
+    .mrg-indtl{
+        margin-top: 4rem;
+    }
+    .hrmg{
+        margin-top: 2rem;
+        margin-bottom: 1.7rem;
+    }
+    .mbconcts{
+        margin-bottom: 2.5rem;
+    }
+    .fot2prog{
+        margin-top: 0rem;
+    }
+    .centraddemo{
+        width: 90%;
+    }
+    .btnesrx{
+        margin-left: 7rem;
+        margin-top: 3rem;
+    }
+    .program-item{
+        margin: 0 15px;
+        padding: 40px 0;
+    }
+    .program1 .slick-active.slick-center > div {
+        width: 100%;
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        color: #e67e22;
+        opacity: 1;
+        transform: scale(1.5);
+        transition: all 200ms ease;
+        z-index: 9;
+        border-left: 15px solid #fff;
+        border-right: 15px solid #fff;
+    }
+    .program1 h2{
+        font-size: 2rem;
+    }
+}
 
 @media (min-width: 1024px) {
     .fot2prog{
@@ -453,9 +446,9 @@ color: white;
     }
     .cajaazul{
         font-size: 1.5rem;
-    line-height: 1.3;
-    font-weight: 600;
-    color: white;
+        line-height: 1.3;
+        font-weight: 600;
+        color: white;
     }
     .cajaazul {
         background-color: #427CCE;
@@ -512,6 +505,12 @@ color: white;
     }
     .btnesrx{
         margin-left: 7rem;
+    }
+    .img-square{
+        height: 300px;
+    }
+    .program1 h2{
+        font-size: 2.5rem;
     }
 }
 
@@ -574,6 +573,9 @@ color: white;
 @media (min-width: 1600px) {
     .btnesrx{
         margin-left: 19rem;
+    }
+    .text-programs{
+        font-size: 0.9rem;
     }
 }
 @media (min-width: 1920px) {

@@ -2,7 +2,7 @@
 
 .centro h1 {
   font-size: 70px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'openBold';
   font-weight: 600;
   text-shadow: 1px 2px 6px #5d5d5d;
 }
@@ -18,12 +18,14 @@
 .contenido1 {
   width: 1200px;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .letra11 h2 {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 3rem;
   color: #4c89e3 !important;
+  font-family: 'openBold';
+  line-height: 1;
 }
 
 .letra10 p {
@@ -63,6 +65,7 @@
 
 .contenido3 h2 {
   font-size: 40px;
+  font-family: 'openBold';
   font-weight: 600;
 }
 
@@ -99,6 +102,7 @@
 
 .contenido5 h2 {
   font-size: 40px;
+  font-family: 'openBold';
   font-weight: 600;
 }
 
@@ -133,10 +137,9 @@
 @media(min-width:1200px){
   
 }
-@media (min-width: 1920px) {
+@media (min-width: 1900px) {
   .centro h1 {
-    font-size: 100px;
-    font-family: "Roboto Condensed", sans-serif;
+    font-size: 4.7rem;
     font-weight: 600;
     text-shadow: 1px 2px 6px #5d5d5d;
   }
@@ -153,7 +156,6 @@
 @media (max-width: 1280px) {
   .centro h1 {
     font-size: 55px;
-    font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     text-shadow: 1px 2px 6px #5d5d5d;
   }
@@ -404,9 +406,9 @@
 
   .contenido1 {
     width: 400px;
-    margin-top: 10px;
+    margin-top: 45px;
+    margin-bottom: 45px;
     position: relative;
-    
   }
 
   .contenido2 {
@@ -510,7 +512,6 @@
 @media (max-width: 375px) {
   .contenido1 {
     width: 300px;
-    margin-top: 10px;
     position: relative;
 }
   }
@@ -541,13 +542,6 @@
     transform: translate(-30%, -30%) !important;
     color: white;
     right: 20%;
-  }
-
-  .contenido1 {
-    width: 330px;
-    margin-top: 10px;
-    position: relative;
-  
   }
 
   .contenido2 {

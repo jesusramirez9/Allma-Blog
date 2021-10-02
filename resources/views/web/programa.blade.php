@@ -1,5 +1,10 @@
 @extends('layouts.webapp')
 
+@section('assets')
+    <link href="{{asset('css/slick.css')}}" rel="stylesheet">
+    <link href="{{asset('css/slick-theme.css')}}" rel="stylesheet">
+@endsection
+
 @section('content')
     <div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -21,29 +26,29 @@
         </div>
         <div class="mb-4" id="slick-empresa">
             <div class="program-item">
-                <div class="img-square" style="background-image: url(images/programa/foto_sendero_del_allma.png)"></div>
+                <div class="img-square" style="background-image: url('{{asset('images/programa/foto_sendero_del_allma.png')}}')"></div>
             </div>
             <div class="program-item">
-                <div class="img-square" style="background-image: url(images/programa/felicitacion_del_allma_principal.png)"></div>
+                <div class="img-square" style="background-image: url({{asset('images/programa/felicitacion_del_allma_principal.png')}})"></div>
             </div>
             <div class="program-item">
-                <div class="img-square" style="background-image: url(images/programa/allma_del_lider_principal.png)">
+                <div class="img-square" style="background-image: url('{{asset('images/programa/allma_del_lider_principal.png')}}')">
                 </div>
             </div>
             <div class="program-item">
-                <div class="img-square" style="background-image: url(images/programa/foto_sendero_del_allma.png)"></div>
+                <div class="img-square" style="background-image: url('{{asset('images/programa/foto_sendero_del_allma.png')}}')"></div>
             </div>
             <div class="program-item">
-                <div class="img-square" style="background-image: url(images/programa/felicitacion_del_allma_principal.png)"></div>
+                <div class="img-square" style="background-image: url({{asset('images/programa/felicitacion_del_allma_principal.png')}})"></div>
             </div>
             <div class="program-item">
-                <div class="img-square" style="background-image: url(images/programa/allma_del_lider_principal.png)">
+                <div class="img-square" style="background-image: url('{{asset('images/programa/allma_del_lider_principal.png')}}')">
                 </div>
             </div>
         </div>
         <div class="row mx-0">
-            <div class="col-md-6 mx-auto px-3">
-                <p class="card-text text-justify mb-4" id="text-program">Este Programa es un proceso transformacional para el desarrollo del Ser, donde de forma experiencial cada participante trabaja en mejorar sus habilidades emocionales para así potenciar su mundo interior y que desde ese nuevo lugar se genere una transformación exterior.</p>
+            <div class="col-md-8 col-lg-6 mx-auto px-3">
+                <p class="text-programs text-justify" id="text-program">Este Programa es un proceso transformacional para el desarrollo del Ser, donde de forma experiencial cada participante trabaja en mejorar sus habilidades emocionales para así potenciar su mundo interior y que desde ese nuevo lugar se genere una transformación exterior.</p>
                 <div class="text-center">
                     <a href="#" class="btn btn-primary btn_progrms">DESCARGAR BROCHURE</a>
                 </div>
@@ -62,58 +67,31 @@
                 <p class="m-0  txtprogr1 txtbluex fwbold">¿necesitas información?</p>
                 <p class="txtprogr2 txtbluex fwbold">ESCRÍBENOS</p>
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label text-black fwbold">Nombre:</label>
-                            <input type="text" class="form-control  inptprgrs " id="exampleFormControlInput1"
-                                placeholder="">
-                        </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label text-black fwbold">Nombre:</label>
+                        <input type="text" name="nombre" class="form-control inptprgrs">
                     </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label text-black fwbold">Dirección:</label>
-                            <input type="email" class="form-control  inptprgrs " id="exampleFormControlInput1"
-                                placeholder="">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1"
-                                    class="form-label text-black fwbold">Dirección:</label>
-                                <input type="text" name="empresa" class="form-control  inptprgrs "
-                                    id="exampleFormControlInput1" required>
-                                @error('empresa')
-                                    <p><strong>{{ $message }}</strong></p>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1"
-                                    class="form-label text-black fwbold">Correo:</label>
-
-                                <input type="email" name="correo" class="form-control  inptprgrs "
-                                    id="exampleFormControlInput1" required>
-                                @error('correo')
-                                    <p><strong>{{ $message }}</strong></p>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1"
-                                    class="form-label text-black fwbold">Teléfonos:</label>
-
-                                <input type="number" name="celular" class="form-control inptprgrs "
-                                    id="exampleFormControlInput1" placeholder="" required>
-                                @error('celular')
-                                    <p><strong>{{ $message }}</strong></p>
-                                @enderror
-                            </div>
-                        </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label text-black fwbold">Dirección:</label>
+                        <input type="text" name="direccion" class="form-control inptprgrs" required>
                     </div>
-                    <div class="text-end">
-                        <button class="btn btn-primary btn_contacto">Enviar</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label text-black fwbold">Correo:</label>
+                        <input type="text" name="correo" class="form-control inptprgrs">
                     </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label text-black fwbold">Teléfono:</label>
+                        <input type="text" name="telefono" class="form-control inptprgrs" required>
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <label class="form-label text-black fwbold">Mensaje:</label>
+                    <textarea name="mensaje" rows="5" class="form-control inptprgrs"></textarea>
+                </div>
+                <div class="text-end">
+                    <button class="btn btn-primary btn_contacto py-1">Enviar</button>
                 </div>
             </div>
             <div class="col-12 col-md-6 align-self-center fot2prog">
@@ -126,6 +104,7 @@
 @endsection
 
 @section('scripts')
+    <script type="text/javascript" src="{{asset('js/slick.min.js')}}"></script>
     <script>
         let programas = [
             {
@@ -158,7 +137,7 @@
             centerMode: true,
             centerPadding: '50px',
             slidesToShow: 3,
-            /*responsive: [
+            responsive: [
                 {
                     breakpoint: 480,
                     settings: {
@@ -168,7 +147,7 @@
                         slidesToShow: 1
                     }
                 }
-            ]*/
+            ]
         });
         $('#slick-empresa').on('beforeChange', function(event, slick, currentSlide, nextSlide){
             console.log(nextSlide);

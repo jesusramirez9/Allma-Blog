@@ -1,11 +1,12 @@
 @extends('layouts.webapp')
 
 @section('assets')
-    <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
+    <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
 @endsection
 
 @section('scripts')
-    <script type="text/javascript" src="{{ URL::asset('js/slick.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/slick.min.js') }}"></script>
 
     <script type="text/javascript">
         $('.testimonio').slick({
@@ -19,7 +20,7 @@
             dotsClass: 'slick-dots',
             infinite: true,
             responsive: [
-                
+
                 {
                     breakpoint: 768,
                     settings: {
@@ -36,8 +37,6 @@
 @endsection
 
 @section('content')
-
-
     <div>
         <div id="carouselExampleSlidesOnly" class="slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -54,33 +53,33 @@
         </div>
         <div class="bg-azulino">
             <div class="container">
-                <div class=" py-4 row text-white fw-se text-center">
-                    <div class="col-6 col-md-3">
-                        <div>
-                            <p class="m-0"><img src="{{ asset('images/assets/icono_desarrollo.png') }}"
-                                    class="mx-2" alt="desarrollo"> Desarrollo
-                            </p>
+                <div class="py-4 row text-white fw-se text-center home-icons">
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <div class="d-flex align-items-center">
+                            <img src="{{ asset('images/assets/icono_desarrollo.png') }}"
+                                    class="img-fluid" alt="desarrollo">
+                            <p class="mb-0 ms-2 ms-md-3">Desarrollo</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <div class="d-flex align-items-center pe-4 pe-md-0">
+                            <img src="{{ asset('images/assets/icono_felicidad.png') }}"
+                                    class="img-fluid" alt="felicidad">
+                            <p class="mb-0 ms-2 ms-md-3">Felicidad</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-3">
-                        <div>
-                            <p class="m-0"><img src="{{ asset('images/assets/icono_felicidad.png') }}"
-                                    class="mx-2" alt="felicidad"> Felicidad
-                            </p>
+                        <div class="d-flex align-items-center">
+                            <img src="{{ asset('images/assets/icon_innovacion.png') }}"
+                                    class="img-fluid" alt="innovacion">
+                            <p class="mb-0 ms-2 ms-md-3">Innovación</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-3">
-                        <div>
-                            <p class="m-0"><img src="{{ asset('images/assets/icon_innovacion.png') }}"
-                                    class="mx-2" alt="innovacion"> Innovación
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div>
-                            <p class="m-0"><img src="{{ asset('images/assets/icon_contribucion.png') }}"
-                                    class="mx-2" alt="contribucion">
-                                Contribución</p>
+                        <div class="d-flex align-items-center">
+                            <img src="{{ asset('images/assets/icon_contribucion.png') }}"
+                                    class="img-fluid" alt="contribucion">
+                            <p class="mb-0 ms-2 ms-md-3">Contribución</p>
                         </div>
                     </div>
                 </div>
@@ -122,16 +121,13 @@
                 </div>
             </div>
         </div><br><!-- /.container -->
-        <div class="carousel-inner">
-            <div class="carousel-item active slide-azul">
-                <img src="{{ asset('images/assets/slider_azul.png') }}" class="img-fluid" alt="slider">
-                <div class="centrado">
-                    <h2><b>#reflexionesdelallma</b></h2>
-                    <h2 class="texto">Blog global para el desarrollo de la Inteligencia Emocional</h2><br>
-                    <button><img class="mano" src="{{asset('images/home/icon_mano.png')}}" alt="">Entra aquí</button>
-
-                </div>
-            </div>
+        <div class="home-bg-reflex">
+            <h2><b>#reflexionesdelallma</b></h2>
+            <h2 class="text2">Blog global para el desarrollo de la Inteligencia Emocional</h2>
+            <a class="btn position-relative" href="{{route('web.nosotros')}}">
+                <img class="mano" src="{{ asset('images/home/icon_mano.png') }}" alt="">
+                Entra aquí
+            </a>
         </div><br><!-- /.container -->
         <div class="container pt-5 pb-5">
             <div class="text-center">
@@ -242,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div><!-- /.container -->
 

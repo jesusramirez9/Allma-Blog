@@ -1,13 +1,9 @@
 @extends('layouts.webapp')
 @section('content')
-    <div id="myCarousel" class=" slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%"></rect>
-                </svg>
-                <img src="{{ asset('images/blog/slider.png') }}" class="img-fluid" alt="slider">
+            <div class="carousel-item imgslide1 active"
+                style="background-image: url('{{ asset('images/blog/slider.png') }}')">
                 <div class="container">
                     <div class="centrado contac_txt">
                         <h1 class="txtcontc1">Blog</h1>
@@ -16,7 +12,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <div class="container">
         <div class="row">
@@ -39,8 +34,8 @@
                         <p>where dosent coasdasdas sdasdsa <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Similique
                             recusandae laudantium deleniti sapiente at, consectetur doloribus, quibusdam enim </p>
-
-                        <p class="bluzol spcrm5">10 Pasos para organizarte</p>
+                        <br>
+                        <p class="bluzol">10 Pasos para organizarte</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sequi dolore, molestiae aspernatur
                             dignissimos ullam tenetur iure perferendis laborum dolorem illo accusamus commodi omnis quas
                             odio, unde
@@ -59,7 +54,7 @@
                             </h5>
                             <div class="d-flex justify-content-between align-items-center mtd-sa ">
                                 <a href=""><img src="{{ asset('images/blogdetail/compartir.png') }}" alt=""></a>
-                                <a href="{{route('posts.index')}}" class="btn btn-primary btn_contacto">VOLVER</a>
+                                <a href="{{ route('posts.index') }}" class="btn btn-primary btn_contacto">VOLVER</a>
                             </div>
                         </div>
 
