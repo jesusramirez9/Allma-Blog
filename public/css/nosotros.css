@@ -115,6 +115,24 @@
   padding-left: 80px;
 }
 
+@media(min-width:320px){
+
+}
+@media(min-width:375px){
+  
+}
+@media(min-width:425px){
+  
+}
+@media(min-width:768px){
+  
+}
+@media(min-width:1024px){
+  
+}
+@media(min-width:1200px){
+  
+}
 @media (min-width: 1920px) {
   .centro h1 {
     font-size: 100px;
@@ -142,7 +160,7 @@
 
   .centro {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 35% !important;
     transform: translate(-30%, -30%) !important;
     color: white;
@@ -150,7 +168,7 @@
 
   .contenido1 {
     width: 900px;
-    margin-top: 80px;
+    margin-top: 60px;
   }
 
   .contenido2 {
@@ -214,7 +232,7 @@
 
   .contenido6 img {
     width: 100%;
-    padding-right: 50px;
+   
   }
 
   .redes {
@@ -388,7 +406,7 @@
     width: 400px;
     margin-top: 10px;
     position: relative;
-    top: -200px;
+    
   }
 
   .contenido2 {
@@ -489,7 +507,13 @@
     top: 190rem;
   }
 }
-
+@media (max-width: 375px) {
+  .contenido1 {
+    width: 300px;
+    margin-top: 10px;
+    position: relative;
+}
+  }
 @media (max-width: 425px) {
   .centro h1 {
     font-size: 25px;
@@ -512,17 +536,18 @@
 
   .centro {
     position: absolute;
-    top: 35%;
-    left: 40% !important;
+    top: 55%;
+    left: 29% !important;
     transform: translate(-30%, -30%) !important;
     color: white;
+    right: 20%;
   }
 
   .contenido1 {
-    width: 300px;
+    width: 330px;
     margin-top: 10px;
     position: relative;
-    top: -200px;
+  
   }
 
   .contenido2 {
@@ -571,7 +596,7 @@
     width: 250px;
     margin-top: 10px;
     position: relative;
-    top: -200px;
+    
   }
 
   .contenido2 {

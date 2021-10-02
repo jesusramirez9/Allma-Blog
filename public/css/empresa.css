@@ -131,7 +131,7 @@ color: white;
         font-size: 2rem;
     }
     .centradoempresa {
-        top: 40% !important;
+        top: 48% !important;
         left: 45% !important;
     }
     .n_rp{
@@ -362,6 +362,13 @@ color: white;
         .fot2prog{
             margin-top: 0rem;
         }
+        .centraddemo{
+            width: 90%;
+        }
+        .btnesrx{
+            margin-left: 7rem;
+            margin-top: 3rem;
+        }
     }
 
 @media (min-width: 1024px) {
@@ -431,6 +438,12 @@ color: white;
     .mrgprogr{
         margin-top: 5rem;
     }
+    .centraddemo{
+        width: 69%;
+    }
+    .btnesrx{
+        margin-left: 7rem;
+    }
 }
 
 @media (min-width: 1250px) {
@@ -441,6 +454,9 @@ color: white;
     .fstxtblux {
         font-size: 2rem;
       
+    }
+    .btnesrx{
+        margin-left: 11rem;
     }
 }
 
@@ -456,6 +472,9 @@ color: white;
     }
     .txtsizesm {
         font-size: 1.15rem;
+    }
+    .btnesrx{
+        margin-left: 13rem;
     }
 }
 
@@ -479,8 +498,17 @@ color: white;
     .txt_dte {
         font-size: 1rem;
     }
+    .btnesrx{
+        margin-left: 16rem;
+    }
 }
 @media (min-width: 1600px) {
+    .btnesrx{
+        margin-left: 19rem;
+    }
 }
 @media (min-width: 1920px) {
+    .btnesrx{
+        margin-left: 26rem;
+    }
 }

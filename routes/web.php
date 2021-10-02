@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\ContactoProController;
 
 
 
@@ -16,9 +18,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/index',[PostController::class,'index'])->name('posts.index');
-
-Route::get('/posts/{post}',[PostController::class,'show'])->name('posts.show');
 
 Route::get('/category/{category}',[PostController::class,'category'])->name('posts.category');
 
@@ -36,22 +35,27 @@ Route::get('/empresa', function () {
     return view('web.empresa');
 })->name('web.empresa');
 
-Route::get('/programa', function () {
-    return view('web.programa');
-})->name('web.programa');
 
-Route::get('/blog', function () {
-    return view('web.blog');
-})->name('web.blog');
+Route::get('programa',[ContactoProController::class, 'index'])->name('web.programa');
+Route::post('programa',[ContactoProController::class, 'store'])->name('contactopro.store');
 
-Route::get('/blog/detail', function () {
-    return view('web.blogshow');
-})->name('web.blogdetail');
+Route::get('contactanos',[ContactoController::class, 'index'])->name('contacto');
+Route::post('contactanos',[ContactoController::class, 'store'])->name('contacto.store');
 
 
-Route::get('/contacto', function () {
-    return view('web.contacto');
-})->name('web.contacto');
+
+Route::get('/blog',[PostController::class,'index'])->name('posts.index');
+
+Route::get('/{post}',[PostController::class,'show'])->name('posts.show');
+
+// Route::get('/blog', function () {
+//     return view('web.blog');
+// })->name('web.blog');
+
+// Route::get('/blog/detail', function () {
+//     return view('web.blogshow');
+// })->name('web.blogdetail');
+
 
 
 

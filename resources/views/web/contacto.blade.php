@@ -1,14 +1,10 @@
 @extends('layouts.webapp')
 @section('content')
 
-    <div id="myCarousel" class=" slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%"></rect>
-                </svg>
-                <img src="{{ asset('images/contacto/banner.png') }}" class="img-fluid" alt="slider">
+            <div class="carousel-item imgslide1 active"
+                style="background-image: url('{{ asset('images/contacto/banner.png') }}')">
                 <div class="container">
                     <div class="centrado contac_txt">
                         <h1 class="txtcontc1">¡Hablemos!</h1>
@@ -18,6 +14,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="container mbconcts">
         <div class="row">
@@ -55,43 +52,68 @@
             </div>
             <div class="col-12 col-md-6">
                 <p class="txtbluex fstxtblux">¡Cuéntanos!</p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <input type="text" class="form-control  frmnput form-inpt frm-nc" id="exampleFormControlInput1"
-                                placeholder="Nombre">
+                <form action="{{ route('contacto.store') }}" method="POST">
+                    @csrf
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <input type="text" name="name" class="form-control   frmnput form-inpt frm-nc"
+                                    id="exampleFormControlInput1" placeholder="Nombre" required>
+                                @error('name')
+                                    <p><strong>{{ $message }}</strong></p>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <input type="email" class="form-control  frmnput form-inpt" id="exampleFormControlInput1"
-                                placeholder="Correo electrónico">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <input type="email" name="correo" class="form-control  frmnput form-inpt"
+                                    id="exampleFormControlInput1" placeholder="Correo electrónico" required>
+                                @error('correo')
+                                    <p><strong>{{ $message }}</strong></p>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <input type="text" class="form-control  frmnput form-inpt frm-nc" id="exampleFormControlInput1"
-                                placeholder="Empresa">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <input type="text" name="empresa"  class="form-control  frmnput form-inpt frm-nc"
+                                    id="exampleFormControlInput1" placeholder="Empresa" required>
+                                    @error('empresa')
+                                    <p><strong>{{ $message }}</strong></p>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <input type="number" class="form-control frmnput  form-inpt" id="exampleFormControlInput1"
-                                placeholder="Teléfono">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <input type="number" name="celular" class="form-control frmnput  form-inpt"
+                                    id="exampleFormControlInput1" placeholder="Teléfono" required>
+                                @error('celular')
+                                    <p><strong>{{ $message }}</strong></p>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label txt-gray_s">Mensaje</label>
-                            <textarea class="form-control form-msj" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" 
+                                    class="form-label txt-gray_s">Mensaje</label>
+                                <textarea class="form-control form-msj" name="mensaje" id="exampleFormControlTextarea1"
+                                    rows="3" required></textarea>
+                                @error('mensaje')
+                                    <p><strong>{{ $message }}</strong></p>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    <div class="text-end">
-                        <button class="btn btn-primary btn_contacto">Enviar</button>
-                    </div>
-                </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary btn_contacto">Enviar</button>
+                        </div>
+                </form>
             </div>
         </div>
     </div>
+    </div>
 
+    @if (session('info'))
+        <script>
+            alert("{{ session('info') }}")
+        </script>
+    @endif
 @endsection
