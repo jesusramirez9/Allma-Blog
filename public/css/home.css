@@ -72,7 +72,6 @@
 .text-center {
     text-align: center !important;
     position: relative;
-   
 }
 
 .mano {
@@ -244,6 +243,10 @@
         left: 16px;
         color: white;
     }
+    .comilld {
+        top: -6%;
+        right: 45%;
+    }
 }
 @media (min-width: 375px) {
     .imgslide1 {
@@ -276,7 +279,7 @@
         z-index: 999;
         left: 33%;
     }
-    .testimt{
+    .testimt {
         padding: 4rem 0;
     }
 }
@@ -303,8 +306,6 @@
         border-radius: 0.2rem;
     }
     .prev1 {
-       
-      
         background: #4d8be0;
         padding: 0.2rem 0.6rem;
         border-radius: 0.2rem;
@@ -330,7 +331,7 @@
         left: -2.3%;
     }
 }
-@media(min-width:1300px){
+@media (min-width: 1300px) {
     .pdlg {
         padding: 0 3rem;
     }
@@ -412,7 +413,6 @@
         top: 30px;
     }
 }
-
 
 @media (max-width: 1000px) {
     .btn-close {
@@ -670,7 +670,6 @@
     .text-center {
         text-align: center !important;
         position: relative;
-       
     }
 }
 

@@ -154,10 +154,9 @@
                 <h2 class="fw-sesa">TESTIMONIOS</h2>
                 <h3 class="flics"><b>FELICES</b></h3>
             </div>
- 
+
             <div class="position-relative testimt">
                 <div class="testimonio">
-
                     <div>
                         <div class="row pdlg">
                             <div class="col-12 col-md-4 np nm">
@@ -166,7 +165,10 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-8 np nm">
-                                <div class="bg-azulin text-center contntest h-100">
+                                <div class="bg-azulin text-center contntest h-100 position-relative">
+                                    <div class="position-absolute comilld">
+                                        <img src="{{ asset('images/assets/comillas.png') }}" alt="">
+                                    </div>
                                     <p class="txtwhite">Estuve buscando como entrenar a mis Distribuidores y
                                         brindarles
                                         herramientas de negocio y de desarrollo personal para que puedan desarrollarse tanto
@@ -188,7 +190,10 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-8 np nm">
-                                <div class="bg-azulin text-center contntest h-100">
+                                <div class="bg-azulin text-center contntest h-100 position-relative">
+                                    <div class="position-absolute comilld">
+                                        <img src="{{ asset('images/assets/comillas.png') }}" alt="">
+                                    </div>
                                     <p class="txtwhite">Me encontraba en la búsqueda de mis áreas de mejora y de poder
                                         conocer herramientas de autogestión y en Allma encontré alternativas para gestionar
                                         mis actividades, mis recursos y mis emociones.
@@ -209,7 +214,10 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-8 np nm">
-                                <div class="bg-azulin text-center contntest h-100">
+                                <div class="bg-azulin text-center contntest h-100 position-relative">
+                                    <div class="position-absolute comilld">
+                                        <img src="{{ asset('images/assets/comillas.png') }}" alt="">
+                                    </div>
                                     <p class="txtwhite">Estuve buscando como entrenar a mis Distribuidores y
                                         brindarles
                                         herramientas de negocio y de desarrollo personal para que puedan desarrollarse tanto
@@ -231,7 +239,10 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-8 np nm">
-                                <div class="bg-azulin text-center contntest h-100">
+                                <div class="bg-azulin text-center contntest h-100 position-relative">
+                                    <div class="position-absolute comilld">
+                                        <img src="{{ asset('images/assets/comillas.png') }}" alt="">
+                                    </div>
                                     <p class="txtwhite">Me encontraba en la búsqueda de mis áreas de mejora y de poder
                                         conocer herramientas de autogestión y en Allma encontré alternativas para gestionar
                                         mis actividades, mis recursos y mis emociones.
