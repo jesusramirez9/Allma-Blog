@@ -70,17 +70,16 @@ body {
     background-color: #fff;
 }
 .header-content {
-    width: 80%;
     margin: auto;
     font-size: 5px;
 }
 
 .navbar-brand {
-    width: 20%;
     color: #373737;
 }
-.navbar-brand .img-fluid {
-    padding-top: 0.5rem;
+
+.logo-header{
+    width: 120px;
 }
 
 .header .navbar-light .navbar-nav .nav-link{
@@ -113,7 +112,7 @@ body {
 }
 .header .navbar-nav{
     display: block;
-    padding-left: 4rem;
+    padding-left: 0;
 }
 .header2 .img-red-header{
     filter: invert(1);
@@ -123,7 +122,6 @@ body {
     padding: 0 10px;
 }
 .navbar-light .navbar-toggler {
-    color: #fff;
     border-color: #fff;
 }
 .header2 .navbar-light .navbar-toggler {
@@ -160,6 +158,17 @@ body {
     text-decoration: none;
     color: #FFF;
     font-size: 1rem;
+    position: relative;
+}
+
+.list-unstyled li .active::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
 }
 
 .redes-footer img{
@@ -247,6 +256,19 @@ body {
     font-weight: 500;
     background: white;
 }
+.banner-text{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    padding-right: 2rem;
+}
+.banner-text h1{
+    font-family: 'openBold';
+    color: #fff;
+    text-shadow: 2px 2px 5px #3e3e3e;
+}
 /*Responsive*/
 
 /* iphone 4 */
@@ -277,7 +299,9 @@ body {
 }
 
 @media (min-width: 768px) {
-    
+    .logo-header{
+        width: 200px;
+    }
 }
 
 
@@ -285,7 +309,7 @@ body {
 
 @media (min-width: 992px) {
     .logo-header{
-        width: 120px;
+        width: 170px;
     }
     .header .navbar-nav {
         display: flex;
@@ -297,7 +321,15 @@ body {
     .section_general {
         padding-top: 75px;
     }
-    
+    .header .navbar-light .navbar-nav .nav-link {
+        margin-right: 6px;
+    }
+    .banner-text{
+        left: 15%;
+    }
+    .banner-text h1{
+        font-size: 3rem;
+    }
 }
 
 
@@ -307,17 +339,30 @@ body {
     .header{
         padding: 1rem 4rem;
     }
+    .logo-header{
+        width: auto;
+    }
     .header .navbar {
         align-items: flex-start;
     }
-    
+    .header-content {
+        width: 98%;
+    }
+    .header .navbar-light .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+    .banner-text h1{
+        font-size: 4rem;
+    }
 }
 
 
 /*Fin 1200*/
 
-@media (min-width: 1400px) {
-    
+@media (min-width: 1360px) {
+    .header-content {
+        width: 90%;
+    }
 }
 
 @media(min-width: 1600px) {
@@ -326,5 +371,7 @@ body {
 }
 
 @media (min-width:1900px) {
-    
+    .banner-text.banner-nosotros h1{
+        font-size: 5rem;
+    }
 }

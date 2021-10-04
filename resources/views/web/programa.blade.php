@@ -1,7 +1,11 @@
 @extends('layouts.webapp')
 
-@section('content')
+@section('assets')
+    <link href="{{asset('css/slick.css')}}" rel="stylesheet">
+    <link href="{{asset('css/slick-theme.css')}}" rel="stylesheet">
+@endsection
 
+@section('content')
     <div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item imgslide1 active"
@@ -16,130 +20,147 @@
         </div>
     </div>
 
-    <div class="container progra1rp">
-        <div class="card cardpromrp">
-            <img src="{{ asset('images/programa/felicitacion_del_allma_principal.png') }}"
-                class="card-img-top w-100 img-fluid" alt="...">
-            <div class="card-body">
-                <p class="card-text text-justify">Este programa es un proceso transformacional para el desarrollo del Ser
-                    donde de forma experiencial cada participante trabaja en mejorar sus habilidades emocionales para asi
-                    potenciar su mundo interior y que desde ese nuevo lugar se genere una transformación exterior</p>
-                <a href="#" class="btn btn-primary w-100 btn_progrms">DESCARGAR BROCHURE</a>
+    <div class="container program1">
+        <div class="">
+            <h2 class=" text-center" id="title-program">El sendero del Allma</h2>
+        </div>
+        <div class="mb-4" id="slick-empresa">
+            <div class="program-item">
+                <div class="img-square" style="background-image: url('{{asset('images/programa/foto_sendero_del_allma.png')}}')"></div>
+            </div>
+            <div class="program-item">
+                <div class="img-square" style="background-image: url({{asset('images/programa/felicitacion_del_allma_principal.png')}})"></div>
+            </div>
+            <div class="program-item">
+                <div class="img-square" style="background-image: url('{{asset('images/programa/allma_del_lider_principal.png')}}')">
+                </div>
+            </div>
+            <div class="program-item">
+                <div class="img-square" style="background-image: url('{{asset('images/programa/foto_sendero_del_allma.png')}}')"></div>
+            </div>
+            <div class="program-item">
+                <div class="img-square" style="background-image: url({{asset('images/programa/felicitacion_del_allma_principal.png')}})"></div>
+            </div>
+            <div class="program-item">
+                <div class="img-square" style="background-image: url('{{asset('images/programa/allma_del_lider_principal.png')}}')">
+                </div>
             </div>
         </div>
-        <div class="card cardpromrp">
-            <img src="{{ asset('images/programa/foto_sendero_del_allma.png') }}" class="card-img-top w-100 img-fluid"
-                alt="...">
-            <div class="card-body">
-                <p class="card-text text-justify">Este Programa es un proceso de entrenamiento mental para explorar tu
-                    potencial como lider y ayudarte a desarrollarlo de la mejor manera, todo esto desde la aplicación de
-                    metodologías observación y el trabajo en diferentes aspectos vinculados al liderazgo como son la
-                    empatía, el servicio, la comunicación, entre otras; logrando con ello líderes preparados para afrontar
-                    los retos del mundo actual transformándolo en un lugar mejor.</p>
-                <a href="#" class="btn btn-primary btn_progrms">DESCARGAR EL PDF DEL PROGRAMA</a>
+        <div class="row mx-0">
+            <div class="col-md-8 col-lg-6 mx-auto px-3">
+                <p class="text-programs text-justify" id="text-program">Este Programa es un proceso transformacional para el desarrollo del Ser, donde de forma experiencial cada participante trabaja en mejorar sus habilidades emocionales para así potenciar su mundo interior y que desde ese nuevo lugar se genere una transformación exterior.</p>
+                <div class="text-center">
+                    <a href="#" class="btn btn-primary btn_progrms">DESCARGAR BROCHURE</a>
+                </div>
             </div>
         </div>
-        <div class="card cardpromrp">
-            <img src="{{ asset('images/programa/allma_del_lider_principal.png') }}" class="card-img-top w-100 img-fluid"
-                alt="...">
-            <div class="card-body">
-                <p class="card-text text-justify">Programa de especialización diseñado para todos aquellos que quieran
-                    llevar sus aprendizajes y experiencias a otras personas. <br> Este programa está centrado en la
-                    creación, diseño y puesta en práctica de espacios de aprendizaje y enseñanza, como talleres y
-                    capacitaciones.</p>
-                <a href="#" class="btn btn-primary btn_progrms">DESCARGA EL PDF DEL PROGRAMA</a>
-            </div>
+        <div class="text-center slick-flechas">
+            <button class="btn btn-primary" id="prev-slick"><i class="fas fa-chevron-left"></i></button>
+            <span class="d-inline-block"><i class="fas fa-circle"></i></span>
+            <button class="btn btn-primary" id="next-slick"><i class="fas fa-chevron-right"></i></button>
         </div>
-
     </div>
 
     <div class="container">
-
         <div class="row mrgprogr">
             <div class="col-12 col-md-6">
                 <p class="m-0  txtprogr1 txtbluex fwbold">¿necesitas información?</p>
                 <p class="txtprogr2 txtbluex fwbold">ESCRÍBENOS</p>
-                <form action="{{ route('contactopro.store') }}" method="POST">
-                    @csrf
-                    <div class="row">
-
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1"
-                                    class="form-label text-black fwbold">Nombre:</label>
-                                <input type="text" name="name" class="form-control  inptprgrs "
-                                    id="exampleFormControlInput1"  required>
-                                @error('name')
-                                    <p><strong>{{ $message }}</strong></p>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1"
-                                    class="form-label text-black fwbold">Dirección:</label>
-                                <input type="text" name="empresa" class="form-control  inptprgrs "
-                                    id="exampleFormControlInput1" required>
-                                @error('empresa')
-                                    <p><strong>{{ $message }}</strong></p>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1"
-                                    class="form-label text-black fwbold">Correo:</label>
-
-                                <input type="email" name="correo" class="form-control  inptprgrs "
-                                    id="exampleFormControlInput1" required>
-                                @error('correo')
-                                    <p><strong>{{ $message }}</strong></p>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1"
-                                    class="form-label text-black fwbold">Teléfonos:</label>
-
-                                <input type="number" name="celular" class="form-control inptprgrs "
-                                    id="exampleFormControlInput1" placeholder="" required>
-                                @error('celular')
-                                    <p><strong>{{ $message }}</strong></p>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1"
-                                    class="form-label text-black fwbold">Mensaje:</label>
-                                <textarea name="mensaje" class="form-control form-msj inptprgrs"
-                                    id="exampleFormControlTextarea1" rows="3"></textarea required>
-                                        @error('mensaje')
-                                            <p><strong>{{ $message }}</strong></p>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="text-end">
-                                <button type="submit" class="btn btn-primary btn_contacto">Enviar</button>
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-                <div class="col-12 col-md-6 align-self-center fot2prog">
-                    <div>
-                        <img src="{{ asset('images/programa/foto_cuestinorio.png') }}" class="img-fluid" alt="slider">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label text-black fwbold">Nombre:</label>
+                        <input type="text" name="nombre" class="form-control inptprgrs">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label text-black fwbold">Dirección:</label>
+                        <input type="text" name="direccion" class="form-control inptprgrs" required>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label text-black fwbold">Correo:</label>
+                        <input type="text" name="correo" class="form-control inptprgrs">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label text-black fwbold">Teléfono:</label>
+                        <input type="text" name="telefono" class="form-control inptprgrs" required>
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <label class="form-label text-black fwbold">Mensaje:</label>
+                    <textarea name="mensaje" rows="5" class="form-control inptprgrs"></textarea>
+                </div>
+                <div class="text-end">
+                    <button class="btn btn-primary btn_contacto py-1">Enviar</button>
+                </div>
             </div>
-
+            <div class="col-12 col-md-6 align-self-center fot2prog">
+                <div>
+                    <img src="{{ asset('images/programa/foto_cuestinorio.png') }}" class="img-fluid" alt="slider">
+                </div>
+            </div>
         </div>
+    </div>
+@endsection
 
-        @if (session('info'))
-        <script>
-            alert("{{ session('info') }}")
-        </script>
-    @endif
-
+@section('scripts')
+    <script type="text/javascript" src="{{asset('js/slick.min.js')}}"></script>
+    <script>
+        let programas = [
+            {
+                title: 'El sendero del Allma',
+                text: 'Este Programa es un proceso transformacional para el desarrollo del Ser, donde de forma experiencial cada participante trabaja en mejorar sus habilidades emocionales para así potenciar su mundo interior y que desde ese nuevo lugar se genere una transformación exterior.'
+            },
+            {
+                title: 'Allma de Líder',
+                text: 'Este Programa es un proceso de entrenamiento mental para explorar tu potencial como líder y ayudarte a desarrollarlo de la mejor manera, todo esto desde la aplicación de metodologías observación y el trabajo en diferentes aspectos.'
+            },
+            {
+                title: 'Facilitación desde el Allma',
+                text: 'Programa de especialización diseñado para todos aquellos que quieran llevar sus aprendizajes y experiencias a otras personas.<br>Este programa está centrado en la creación, diseño y puesta en práctica de espacios de aprendizaje y enseñanza, como talleres y capacitaciones.'
+            },
+            {
+                title: 'El sendero del Allma',
+                text: 'Este Programa es un proceso transformacional para el desarrollo del Ser, donde de forma experiencial cada participante trabaja en mejorar sus habilidades emocionales para así potenciar su mundo interior y que desde ese nuevo lugar se genere una transformación exterior.'
+            },
+            {
+                title: 'Allma de Líder',
+                text: 'Este Programa es un proceso de entrenamiento mental para explorar tu potencial como líder y ayudarte a desarrollarlo de la mejor manera, todo esto desde la aplicación de metodologías observación y el trabajo en diferentes aspectos.'
+            },
+            {
+                title: 'Facilitación desde el Allma',
+                text: 'Programa de especialización diseñado para todos aquellos que quieran llevar sus aprendizajes y experiencias a otras personas.<br>Este programa está centrado en la creación, diseño y puesta en práctica de espacios de aprendizaje y enseñanza, como talleres y capacitaciones.'
+            }
+        ];
+        $('#slick-empresa').slick({
+            infinite: true,
+            centerMode: true,
+            centerPadding: '50px',
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+        $('#slick-empresa').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            console.log(nextSlide);
+            const nextItem = nextSlide;
+            $('#title-program').text(programas[nextItem].title);
+            $('#text-program').html(programas[nextItem].text);
+        });
+        $('#next-slick').on('click', function(){
+            $('#slick-empresa').slick('slickNext');
+        });
+        $('#prev-slick').on('click', function(){
+            $('#slick-empresa').slick('slickPrev');
+        });
+        
+    </script>
 @endsection

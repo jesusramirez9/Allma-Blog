@@ -1,11 +1,12 @@
 @extends('layouts.webapp')
 
 @section('assets')
-    <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
+    <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
 @endsection
 
 @section('scripts')
-    <script type="text/javascript" src="{{ URL::asset('js/slick.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/slick.min.js') }}"></script>
 
     <script type="text/javascript">
         $('.testimonio').slick({
@@ -14,34 +15,33 @@
             infinite: true,
             slidesToShow: 2,
             slidesToScroll: 2,
-            autoplay: true,
-            autoplaySpeed: 2000,
-
+            
+            autoplaySpeed: 5000,
             dotsClass: 'slick-dots',
             infinite: true,
             responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
 
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
                 }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
                 // instead of a settings object
@@ -51,8 +51,6 @@
 @endsection
 
 @section('content')
-
-
     <div>
         <div id="carouselExampleSlidesOnly" class="slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -69,33 +67,33 @@
         </div>
         <div class="bg-azulino">
             <div class="container">
-                <div class=" py-4 row text-white fw-se text-center">
-                    <div class="col-6 col-md-3">
-                        <div>
-                            <p class="m-0"><img src="{{ asset('images/assets/icono_desarrollo.png') }}"
-                                    class="mx-2" alt="desarrollo"> Desarrollo
-                            </p>
+                <div class="py-4 row text-white fw-se text-center home-icons">
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <div class="d-flex align-items-center">
+                            <img src="{{ asset('images/assets/icono_desarrollo.png') }}"
+                                    class="img-fluid" alt="desarrollo">
+                            <p class="mb-0 ms-2 ms-md-3">Desarrollo</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <div class="d-flex align-items-center pe-4 pe-md-0">
+                            <img src="{{ asset('images/assets/icono_felicidad.png') }}"
+                                    class="img-fluid" alt="felicidad">
+                            <p class="mb-0 ms-2 ms-md-3">Felicidad</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-3">
-                        <div>
-                            <p class="m-0"><img src="{{ asset('images/assets/icono_felicidad.png') }}"
-                                    class="mx-2" alt="felicidad"> Felicidad
-                            </p>
+                        <div class="d-flex align-items-center">
+                            <img src="{{ asset('images/assets/icon_innovacion.png') }}"
+                                    class="img-fluid" alt="innovacion">
+                            <p class="mb-0 ms-2 ms-md-3">Innovación</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-3">
-                        <div>
-                            <p class="m-0"><img src="{{ asset('images/assets/icon_innovacion.png') }}"
-                                    class="mx-2" alt="innovacion"> Innovación
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div>
-                            <p class="m-0"><img src="{{ asset('images/assets/icon_contribucion.png') }}"
-                                    class="mx-2" alt="contribucion">
-                                Contribución</p>
+                        <div class="d-flex align-items-center">
+                            <img src="{{ asset('images/assets/icon_contribucion.png') }}"
+                                    class="img-fluid" alt="contribucion">
+                            <p class="mb-0 ms-2 ms-md-3">Contribución</p>
                         </div>
                     </div>
                 </div>
@@ -137,17 +135,13 @@
                 </div>
             </div>
         </div><br><!-- /.container -->
-        <div class="carousel-inner">
-            <div class="carousel-item active slide-azul">
-                <img src="{{ asset('images/assets/slider_azul.png') }}" class="img-fluid" alt="slider">
-                <div class="centrado">
-                    <h2><b>#reflexionesdelallma</b></h2>
-                    <h2 class="texto">Blog global para el desarrollo de la Inteligencia Emocional</h2><br>
-                    <button><img class="mano" src="{{ asset('images/home/icon_mano.png') }}" alt="">Entra
-                        aquí</button>
-
-                </div>
-            </div>
+        <div class="home-bg-reflex">
+            <h2><b>#reflexionesdelallma</b></h2>
+            <h2 class="text2">Blog global para el desarrollo de la Inteligencia Emocional</h2>
+            <a class="btn position-relative" href="{{route('web.nosotros')}}">
+                <img class="mano" src="{{ asset('images/home/icon_mano.png') }}" alt="">
+                Entra aquí
+            </a>
         </div><br><!-- /.container -->
         <div class="container pt-5 pb-5 ">
             <div class="text-center">
@@ -176,7 +170,7 @@
                                     </p>
                                     <p class="m-0 txt-vldk">Janice Ortiz Clark</p>
                                     <p class="txtwhite fwbolddd">TIENS Group</p>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#modal1">Leer
                                         testimonio</button>
                                 </div>
                             </div>
@@ -200,7 +194,7 @@
                                     </p>
                                     <p class="m-0 txt-vldk">Fredy Ochoa Del Aguila</p>
                                     <p class="txtwhite fwbolddd">Actor</p>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#modal2">Leer
                                         testimonio</button>
                                 </div>
                             </div>
@@ -225,7 +219,7 @@
                                     </p>
                                     <p class="m-0 txt-vldk">Janice Ortiz Clark</p>
                                     <p class="txtwhite fwbolddd">TIENS Group</p>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#modal1">Leer
                                         testimonio</button>
                                 </div>
                             </div>
@@ -249,7 +243,7 @@
                                     </p>
                                     <p class="m-0 txt-vldk">Fredy Ochoa Del Aguila</p>
                                     <p class="txtwhite fwbolddd">Actor</p>
-                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#Modal1">Leer
+                                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#modal2">Leer
                                         testimonio</button>
                                 </div>
                             </div>
@@ -268,22 +262,18 @@
         </div><!-- /.container -->
 
         <!-- Modal1 -->
-        <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-lg modal-dialog-centered">
                 <div class="modal-content custom-modal">
                     <div class="modal-body p-0">
-                        <div class="card modal-body text-white position-relative p-0">
-                            <div class="row g-0">
-                                <div class="col-md-4 ima2">
-                                    <img src="{{ asset('images/assets/janice_ortiz.png') }}" class="rounded-start"
-                                        alt="...">
-                                </div>
-                                <div class="col-md-8 card3">
-                                    <div class="card-body text-center"><br>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="card modal-body text-white position-relative p-0 border-0">
+                            <div class="row mx-0">
+                                <div class="col-md-4 modal-home-img d-none d-md-block" style="background-image: url({{asset('images/assets/janice_ortiz.png')}})"></div>
+                                <div class="col-md-8 card3 px-4">
+                                    <div class="card-body text-center px-3"><br>
                                         <h4 class="letra7"><b>Janice Ortiz Clark</b></h4>
                                         <h4 class="letra8">TIENS Group</h4><br><br>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
                                         <p class="card-text letra9">Estuve buscando como entrenar a mis Distribuidores y
                                             brindarles
                                             herramientas de negocio y de desarrollo personal para que puedan desarrollarse
@@ -301,9 +291,8 @@
                                             Se lo recomendaría a mi cualquier persona que busque expandir su visión y
                                             aprender a manejar
                                             mejor su estado emocional.
+                                            <br><br>
                                         </p>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -313,22 +302,18 @@
             </div>
         </div>
         <!-- Modal2 -->
-        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-lg modal-dialog-centered">
                 <div class="modal-content custom-modal">
                     <div class="modal-body p-0">
-                        <div class="card modal-body text-white position-relative p-0">
-                            <div class="row g-0">
-                                <div class="col-md-4 ima2">
-                                    <img src="{{ asset('images/assets/foto_fredy.png') }}" class="rounded-start"
-                                        alt="...">
-                                </div>
-                                <div class="col-md-8 card3">
-                                    <div class="card-body text-center"><br>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="card modal-body text-white position-relative p-0 border-0">
+                            <div class="row mx-0">
+                                <div class="col-md-4 modal-home-img d-none d-md-block" style="background-image: url({{asset('images/assets/foto_fredy.png')}})"></div>
+                                <div class="col-md-8 card3 px-4">
+                                    <div class="card-body text-center px-3"><br>
                                         <h4 class="letra7"><b>Fredy Ochoa Del Aguila</b></h4>
                                         <h4 class="letra8">Actor</h4><br><br>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
                                         <p class="card-text letra9">Me encontraba en la búsqueda de mis áreas de mejora y
                                             de
                                             poder conocer
@@ -347,10 +332,8 @@
                                             Se lo recomendaría a mi cualquier persona que busque expandir su visión y
                                             aprender a manejar
                                             mejor su estado emocional.
-
+                                            <br><br>
                                         </p>
-
-
                                     </div>
                                 </div>
                             </div>

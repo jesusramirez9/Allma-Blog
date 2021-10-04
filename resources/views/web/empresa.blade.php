@@ -5,12 +5,8 @@
     <div class="carousel-inner">
         <div class="carousel-item imgslide1 active"
             style="background-image: url('{{asset('images/empresa/SLIDER_.png')}}')">
-            <div class="container">
-                <div class="centrado centradoempresa txt-empresa">
-                    <p class="m-0">Consultoría en </p>
-                    <p class="m-0">INTELIGENCIA EMOCIONAL</p>
-                    <P class="m-0">Y BIENESTAR LABORAL 360°</P>
-                </div>
+            <div class="banner-text">
+                <h1>Consultoría en<br class="d-none d-lg-block"> INTELIGENCIA EMOCIONAL<br class="d-none d-lg-block"> Y BIENESTAR LABORAL 360°</h1>
             </div>
         </div>
     </div>

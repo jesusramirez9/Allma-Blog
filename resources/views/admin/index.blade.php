@@ -3,11 +3,11 @@
 @section('title', 'Letika')
 
 @section('content_header')
-    <h1>Letika</h1>
+    <h1>Allma</h1>
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+    <p>Bienvenido a este hermoso panel de administración.</p>
 @stop
 
 @section('css')

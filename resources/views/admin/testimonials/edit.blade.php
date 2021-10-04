@@ -3,7 +3,7 @@
 @section('title', 'Allma')
 
 @section('content_header')
-    <h1>Editar post</h1>
+    <h1>Editar Testimonio</h1>
 @stop
 
 @section('content')
@@ -16,11 +16,11 @@
 
     <div class="card">
         <div class="card-body">
-            {!! Form::model($post, ['route' => ['admin.posts.update', $post], 'autocomplete' => 'off', 'files' => true, 'method' => 'put']) !!}
+            {!! Form::model($testimonial, ['route' => ['admin.testimonials.update', $testimonial], 'autocomplete' => 'off', 'files' => true, 'method' => 'put']) !!}
 
-            @include('admin.posts.partials.form')
+            @include('admin.testimonials.partials.form')
 
-            {!! Form::submit('Actualizar post', ['class' => 'btn btn-primary']) !!}
+            {!! Form::submit('Actualizar Testimonio', ['class' => 'btn btn-primary']) !!}
 
             {!! Form::close() !!}
         </div>
@@ -45,31 +45,9 @@
     </style>
 @stop
 
+
 @section('js')
-    <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
-    <script src="{{ asset('vendor/jQuery-Plugin-stringToSlug-1.3/jquery.stringToSlug.min.js') }}">
-
-    </script>
     <script>
-        $(document).ready(function() {
-            $("#name").stringToSlug({
-                setEvents: 'keyup keydown blur',
-                getPut: '#slug',
-                space: '-'
-            });
-        });
-
-        ClassicEditor
-            .create(document.querySelector('#extract'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#body'))
-            .catch(error => {
-                console.error(error);
-            });
         //cambiar imagen
         document.getElementById("file").addEventListener('change', cambiarImagen);
 

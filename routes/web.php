@@ -23,7 +23,7 @@ Route::get('/category/{category}',[PostController::class,'category'])->name('pos
 
 Route::get('/tag/{tag}',[PostController::class,'tag'])->name('posts.tag');
 
-Route::get('/', function () {
+Route::get('', function () {
     return view('web.inicio');
 })->name('web.inicio');
 
@@ -46,7 +46,7 @@ Route::post('contactanos',[ContactoController::class, 'store'])->name('contacto.
 
 Route::get('/blog',[PostController::class,'index'])->name('posts.index');
 
-Route::get('/{post}',[PostController::class,'show'])->name('posts.show');
+Route::get('/blog/{post}',[PostController::class,'show'])->name('posts.show');
 
 // Route::get('/blog', function () {
 //     return view('web.blog');

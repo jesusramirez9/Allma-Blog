@@ -1,19 +1,18 @@
 @extends('layouts.webapp')
 @section('content')
-<div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item imgslide1 active"
-            style="background-image: url('{{ asset('images/blog/slider.png') }}')">
-            <div class="container">
-                <div class="centrado contac_txt">
-                    <h1 class="txtcontc1">Blog</h1>
-                    <p class="txtcontc2">Consejos y noticias</p>
+    <div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item imgslide1 active"
+                style="background-image: url('{{ asset('images/blog/slider.png') }}')">
+                <div class="container">
+                    <div class="centrado contac_txt">
+                        <h1 class="txtcontc1">Blog</h1>
+                        <p class="txtcontc2">Consejos y noticias</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-    
 
     <div class="container">
         <div class="indx-blg">
