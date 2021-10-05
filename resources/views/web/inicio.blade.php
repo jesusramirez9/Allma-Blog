@@ -15,7 +15,7 @@
             infinite: true,
             slidesToShow: 2,
             slidesToScroll: 2,
-            
+            Margin: '50px',
             autoplaySpeed: 5000,
             dotsClass: 'slick-dots',
             infinite: true,
@@ -51,15 +51,15 @@
 @endsection
 
 @section('content')
-    <div>
+    <div class="secini1">
         <div id="carouselExampleSlidesOnly" class="slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item imgslide1 active"
                     style="background-image: url('{{ asset('images/assets/slider_foto1.png') }}')">
                     <div class="container">
-                        <div class="carousel-caption text-start banner-home letra10">
-                            <h1>Comienza tu</h1>
-                            <p class="revo_inte">Revolución Interior</p>
+                        <div class="carousel-caption text-start banner-home letra10 scrollflow -slide-left -opacity">
+                            <h1 class="animate__animated animate__fadeInLeft ">Comienza tu</h1>
+                            <p class="revo_inte animate__animated animate__fadeInLeft ">Revolución Interior</p>
                         </div>
                     </div>
                 </div>
@@ -69,31 +69,31 @@
             <div class="container">
                 <div class="py-4 row text-white fw-se text-center home-icons">
                     <div class="col-6 col-md-3 mb-3 mb-md-0">
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center scrollflow -slide-left -opacity">
                             <img src="{{ asset('images/assets/icono_desarrollo.png') }}"
-                                    class="img-fluid" alt="desarrollo">
-                            <p class="mb-0 ms-2 ms-md-3">Desarrollo</p>
+                                    class="img-fluid animate__animated animate__fadeInLeft" alt="desarrollo">
+                            <p class="mb-0 ms-2 ms-md-3 animate__animated animate__fadeInLeft">Desarrollo</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-3 mb-3 mb-md-0">
-                        <div class="d-flex align-items-center pe-4 pe-md-0">
+                        <div class="d-flex align-items-center pe-4 pe-md-0 scrollflow -slide-right -opacity">
                             <img src="{{ asset('images/assets/icono_felicidad.png') }}"
-                                    class="img-fluid" alt="felicidad">
-                            <p class="mb-0 ms-2 ms-md-3">Felicidad</p>
+                                    class="img-fluid animate__animated animate__fadeInRight" alt="felicidad">
+                            <p class="mb-0 ms-2 ms-md-3 animate__animated animate__fadeInRight">Felicidad</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-3">
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center scrollflow -slide-left -opacity">
                             <img src="{{ asset('images/assets/icon_innovacion.png') }}"
-                                    class="img-fluid" alt="innovacion">
-                            <p class="mb-0 ms-2 ms-md-3">Innovación</p>
+                                    class="img-fluid animate__animated animate__fadeInLeft" alt="innovacion">
+                            <p class="mb-0 ms-2 ms-md-3 animate__animated animate__fadeInLeft">Innovación</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-3">
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center scrollflow -slide-right -opacity">
                             <img src="{{ asset('images/assets/icon_contribucion.png') }}"
-                                    class="img-fluid" alt="contribucion">
-                            <p class="mb-0 ms-2 ms-md-3">Contribución</p>
+                                    class="img-fluid animate__animated animate__fadeInRight" alt="contribucion">
+                            <p class="mb-0 ms-2 ms-md-3 animate__animated animate__fadeInRight">Contribución</p>
                         </div>
                     </div>
                 </div>
@@ -101,13 +101,13 @@
         </div>
     </div>
 
-    <div class="position-relative">
+    <div class="position-relative secini1">
         <div class="container marketing pb-5">
 
             <div class="row featurette d-flex justify-content-center">
                 <div class="col-md-10 offset-md-1">
                     <div class="row">
-                        <div class="col-md-5 cambio3">
+                        <div class="col-md-5 cambio3 scrollflow -slide-left -opacity">
                             <h2 class="featurette-heading letra5"><b>¿Qué es la Inteligencia Emocional?</b></h2>
 
                             <p class="lead" style="text-align: justify;"><b>Bruno Escobar,</b> fundador y director
@@ -119,9 +119,9 @@
                                 capacitamos el talento y potencial a través de principios, valores, competencias vitales
                                 para que
                                 alcances tu éxito personal y profesional.</p>
-                            <button class="btn_mx">Leer más</button>
+                            <button class="btn_mx scrollflow -slide-left -opacity">Leer más</button>
                         </div>
-                        <div class="col-md-7 cambio">
+                        <div class="col-md-7 cambio scrollflow -slide-right -opacity">
                             <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                                 width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
                                 aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -136,20 +136,26 @@
             </div>
         </div><br><!-- /.container -->
         <div class="home-bg-reflex">
-            <h2><b>#reflexionesdelallma</b></h2>
-            <h2 class="text2">Blog global para el desarrollo de la Inteligencia Emocional</h2>
-            <a class="btn position-relative" href="{{route('web.nosotros')}}">
+            <h2 class="scrollflow -slide-bottom -opacity"><b>#reflexionesdelallma</b></h2>
+            <h2 class="text2 scrollflow -slide-top -opacity ">Blog global para el desarrollo de la Inteligencia Emocional</h2>
+            <a class="btn position-relative scrollflow -slide-top -opacity" href="{{route('web.nosotros')}}">
                 <img class="mano" src="{{ asset('images/home/icon_mano.png') }}" alt="">
                 Entra aquí
             </a>
         </div><br><!-- /.container -->
         <div class="container pt-5 pb-5 ">
             <div class="text-center">
-                <h2 class="fw-sesa">TESTIMONIOS</h2>
-                <h3 class="flics"><b>FELICES</b></h3>
+                <h2 class="fw-sesa scrollflow -slide-left -opacity">TESTIMONIOS</h2>
+                <h3 class="flics scrollflow -slide-right -opacity"><b>FELICES</b></h3>
             </div>
 
             <div class="position-relative testimt">
+                <div class="position-absolute comilld">
+                    <img src="{{ asset('images/assets/comillas.png') }}" alt="">
+                </div>
+                <div class="position-absolute comillda comlla2">
+                    <img src="{{ asset('images/assets/comillas.png') }}" alt="">
+                </div>
                 <div class="testimonio">
                     <div>
                         <div class="row pdlg">
@@ -160,9 +166,7 @@
                             </div>
                             <div class="col-12 col-md-8 np nm">
                                 <div class="bg-azulin text-center contntest h-100 position-relative">
-                                    <div class="position-absolute comilld">
-                                        <img src="{{ asset('images/assets/comillas.png') }}" alt="">
-                                    </div>
+                                    
                                     <p class="txtwhite">Estuve buscando como entrenar a mis Distribuidores y
                                         brindarles
                                         herramientas de negocio y de desarrollo personal para que puedan desarrollarse tanto
@@ -185,9 +189,7 @@
                             </div>
                             <div class="col-12 col-md-8 np nm">
                                 <div class="bg-azulin text-center contntest h-100 position-relative">
-                                    <div class="position-absolute comilld">
-                                        <img src="{{ asset('images/assets/comillas.png') }}" alt="">
-                                    </div>
+                                    
                                     <p class="txtwhite">Me encontraba en la búsqueda de mis áreas de mejora y de poder
                                         conocer herramientas de autogestión y en Allma encontré alternativas para gestionar
                                         mis actividades, mis recursos y mis emociones.
@@ -209,9 +211,7 @@
                             </div>
                             <div class="col-12 col-md-8 np nm">
                                 <div class="bg-azulin text-center contntest h-100 position-relative">
-                                    <div class="position-absolute comilld">
-                                        <img src="{{ asset('images/assets/comillas.png') }}" alt="">
-                                    </div>
+                                    
                                     <p class="txtwhite">Estuve buscando como entrenar a mis Distribuidores y
                                         brindarles
                                         herramientas de negocio y de desarrollo personal para que puedan desarrollarse tanto
@@ -234,9 +234,7 @@
                             </div>
                             <div class="col-12 col-md-8 np nm">
                                 <div class="bg-azulin text-center contntest h-100 position-relative">
-                                    <div class="position-absolute comilld">
-                                        <img src="{{ asset('images/assets/comillas.png') }}" alt="">
-                                    </div>
+                                    
                                     <p class="txtwhite">Me encontraba en la búsqueda de mis áreas de mejora y de poder
                                         conocer herramientas de autogestión y en Allma encontré alternativas para gestionar
                                         mis actividades, mis recursos y mis emociones.
@@ -250,10 +248,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="arrow_prev position-absolute prev1">
+                <div class="btn arrow_prev position-absolute prev1">
                     <i class="fas fa-chevron-left"></i>
                 </div>
-                <div class="arrow_next position-absolute prev2">
+                <div class="btn arrow_next position-absolute prev2">
                     <i class="fas fa-chevron-right"></i>
                 </div>
             </div>
@@ -343,9 +341,6 @@
             </div>
         </div>
 
-        <button class="button-wspp">
-            <img class="wspp" src="{{ asset('images/assets/icon_whasapp.png') }}" alt="wspp">
-        </button>
     </div>
 
 

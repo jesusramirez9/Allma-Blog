@@ -16,12 +16,15 @@
     <link href="{{asset('css/empresa.css')}}" rel="stylesheet">
     <link href="{{asset('css/home.css')}}" rel="stylesheet">
     <link href="{{asset('css/nosotros.css')}}" rel="stylesheet">
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     @yield('assets')
 </head>
 
 <body>
-    <header class="header">
+    <header class="header secini1">
         <div class="header-content">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand py-0" href="/">
@@ -53,7 +56,7 @@
                                 href="{{ route('posts.index') }}">BLOG</a>
                         </li>
                         <li class="nav-item mb-3 mb-lg-0">
-                            <a class="nav-link {{ request()->is('contacto') ? 'active' : '' }} prime"
+                            <a class="nav-link {{ request()->is('contactanos') ? 'active' : '' }} prime"
                                 href="{{ route('contacto') }}">CÚENTAME ALGO</a>
                         </li>
                         <li class="nav-item nav-item-social ms-xl-3">
@@ -78,43 +81,43 @@
     @yield('content')
 
     <!-- FOOTER -->
-    <footer class="footer bg-dark">
+    <footer class="footer bg-dark secini1">
         <div class="container-footer text-md-left">
             <div class="row col-md-12 col-lg-11 col-xl-10 col-xxl-9 mx-auto">
                 <div class="col-md-6 col-lg-4 py-4 px-3">
-                    <ul class="list-unstyled d-none d-md-block">
-                        <li class="mb-2"><a href="{{ route('web.inicio') }}" class="{{ request()->is('/') ? 'active' : '' }}">Inicio</a></li>
-                        <li class="mb-2"><a href="{{ route('web.nosotros') }}" class="{{ request()->is('nosotros') ? 'active' : '' }}">Nosotros</a></li>
-                        <li class="mb-2"><a href="{{ route('web.empresa') }}" class="{{ request()->is('empresa') ? 'active' : '' }}">Empresa</a></li>
-                        <li class="mb-2"><a href="{{ route('web.programa') }}" class="{{ request()->is('programa') ? 'active' : '' }}">Programas</a></li>
-                        <li class="mb-2"><a href="{{ route('posts.index') }}" class="{{ request()->is('blog') ? 'active' : '' }}">Blog</a></li>
-                        <li class="mb-2"><a href="{{ route('contacto') }}" class="{{ request()->is('contactanos') ? 'active' : '' }}">Cuéntame algo</a></li>
+                    <ul class="list-unstyled d-none d-md-block scrollflow -slide-right -opacity">
+                        <li class="mb-2 "><a href="{{ route('web.inicio') }}" class="{{ request()->is('/') ? 'active' : '' }}">Inicio</a></li>
+                        <li class="mb-2 "><a href="{{ route('web.nosotros') }}" class="{{ request()->is('nosotros') ? 'active' : '' }}">Nosotros</a></li>
+                        <li class="mb-2 "><a href="{{ route('web.empresa') }}" class="{{ request()->is('empresa') ? 'active' : '' }}">Empresa</a></li>
+                        <li class="mb-2 "><a href="{{ route('web.programa') }}" class="{{ request()->is('programa') ? 'active' : '' }}">Programas</a></li>
+                        <li class="mb-2 "><a href="{{ route('posts.index') }}" class="{{ request()->is('blog') ? 'active' : '' }}">Blog</a></li>
+                        <li class="mb-2 "><a href="{{ route('contacto') }}" class="{{ request()->is('contactanos') ? 'active' : '' }}">Cuéntame algo</a></li>
                     </ul>
                     <div class="redes-footer d-flex align-items-center py-3">
-                        <div class="">
+                        <div class=" scrollflow -slide-right -opacity">
                             <a href=" https://www.facebook.com/allma.pe" target="_blank" class="d-inline-block me-2"><img src="{{asset('images/fb_blanco.png')}}" alt="Facebook"></a>
                             <a  href="https://www.instagram.com/allma.pe/" target="_blank" class="d-inline-block me-2"><img src="{{asset('images/ig_blanco.png')}}" alt="Instagram"></a>
                             <a href="https://www.linkedin.com/company/allmaescuela/" target="_blank" class="d-inline-block me-2"><img src="{{asset('images/linkedind_blanco.png')}}" alt="Linkedin"></a>
                         </div>
-                        <p class="text-white mb-0 ms-3">Telf: 983576879<br>info@allma.pe</p>
+                        <p class="text-white mb-0 ms-3 scrollflow -slide-left -opacity">Telf: 983576879<br>info@allma.pe</p>
                     </div>
                 </div>
-                <div class="col-md-4 px-3 text-center footer-logo d-md-none d-lg-block">
+                <div class="col-md-4 px-3 text-center footer-logo d-md-none d-lg-block scrollflow -slide-bottom -opacity">
                     <img src="{{asset('images/logo_blanco.png')}}" alt="Logo Allma" class="img-fluid">
                 </div>
                 <div class="col-md-6 col-lg-4 py-4 px-3">
                     <div class="col-lg-11 col-xl-9 ms-auto footer-contacto">
                         <p class="fw-bold">Suscríbete a nuestro Newsletter:</p>
                         <form action="">
-                            <div class="mb-3">
+                            <div class="mb-3 scrollflow -slide-left -opacity">
                                 <label class="mb-1">Nombre</label>
                                 <input type="text" class="form-control">
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 scrollflow -slide-left -opacity">
                                 <label class="mb-1">Correo electrónico</label>
                                 <input type="email" class="form-control">
                             </div>
-                            <div class="">
+                            <div class=" scrollflow -slide-top -opacity">
                                 <button type="button" class="btn btn-primary">Registro</button>
                             </div>
                         </form>
@@ -125,12 +128,16 @@
         <div class="footer-end bg-white">
             <p class="text-center mb-0">Allma 2021 Todos los derechos reservados</p>
         </div>
+        
+        <a href="https://wa.me/51983576879" target="_blank" class="button-wspp">
+            <img class="wspp" src="{{ asset('images/assets/icon_whasapp.png') }}" alt="wspp">
+        </a>
     </footer>
 
     {{-- Scripts por pagina --}}
     <script type="text/javascript" src="{{asset('js/jquery-3.5.1.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <script src="{{ asset('plugin/scrollflow/eskju.jquery.scrollflow.min.js') }}"></script>
     @yield('scripts')
 </body>
 

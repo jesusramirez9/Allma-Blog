@@ -28,6 +28,9 @@
     margin-left: 0;
     margin-right: 0;
 }
+.secini1{
+    overflow: hidden;
+}
 .img_testimonio {
     width: 100%;
     height: 10rem;
@@ -242,6 +245,9 @@
 }
 
 @media (min-width: 320px) {
+    .comlla2{
+        display: none;
+    }
     .imgslide1 {
         height: 14rem;
     }
@@ -264,14 +270,24 @@
         color: white;
     }
     .comilld {
-        top: -6%;
-        right: 45%;
+        top: 40%;
+        right: 44%;
+        z-index: 99;
     }
 }
 @media (min-width: 375px) {
-    
+    .comilld {
+        top: 43%;
+        right: 44%;
+        z-index: 99;
+    }
 }
 @media (min-width: 425px) {
+    .comilld {
+        top: 45%;
+        right: 44%;
+        z-index: 99;
+    }
 }
 @media (min-width: 768px) {
     .imgslide1 {
@@ -309,8 +325,18 @@
     .home-icons .align-items-center{
         justify-content: start;
     }
+    .comilld {
+        top: 9%;
+        right: 50%;
+        z-index: 99;
+    }
 }
 @media (min-width: 1024px) {
+    .comlla2{
+        display: block;
+        z-index: 99;
+
+    }
     .imgslide1 {
         height: 27rem;
     }
@@ -340,6 +366,19 @@
         z-index: 999;
         left: -3%;
     }
+    .comilld {
+        top: 8%;
+        right: 23%;
+        z-index: 99;
+    }
+    .comlla2 {
+        display: block;
+        z-index: 99;
+        top: 8%;
+      
+        z-index: 99;
+        left: 23%;
+    }
 }
 @media (min-width: 1200px) {
     .banner-home h1 {
@@ -363,6 +402,14 @@
         bottom: 45%;
         z-index: 999;
         left: -2.3%;
+    }
+    .comilld {
+        top: 9%;
+        right: 24%; 
+    }
+    .comlla2 {
+        top: 9%;
+        left: 22%;
     }
 }
 @media(min-width:1300px){

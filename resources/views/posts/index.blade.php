@@ -1,27 +1,27 @@
 @extends('layouts.webapp')
 @section('content')
-    <div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="secini1 slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item imgslide1 active"
                 style="background-image: url('{{ asset('images/blog/slider.png') }}')">
                 <div class="container">
                     <div class="centrado contac_txt">
-                        <h1 class="txtcontc1">Blog</h1>
-                        <p class="txtcontc2">Consejos y noticias</p>
+                        <h1 class="txtcontc1 animate__animated animate__fadeInLeft">Blog</h1>
+                        <p class="txtcontc2 animate__animated animate__fadeInLeft">Consejos y noticias</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container secini1">
         <div class="indx-blg">
-            <p class="m-0 fw600">Mantente enterado de todo</p>
-            <p class="bluzol">Acerca de una vida más feliz</p>
+            <p class="m-0 fw600 animate__animated animate__fadeInLeft">Mantente enterado de todo</p>
+            <p class="bluzol animate__animated animate__fadeInLeft">Acerca de una vida más feliz</p>
         </div>
-        <div class="row mrowblg">
+        <div class="row mrowblg animate__animated animate__fadeIn">
             @foreach ($posts as $post)
-                <div class="col-12 col-md-6 mt-4  position-relative">
+                <div class="col-12 col-md-6 mt-4  position-relative scrollflow -slide-bottom -opacity">
                     <div class=" shadow mrl bg-nrpte bg-cover  bg-body h-sda  bg-center"
                         style="background-image: url(@if ($post->image) {{ Storage::url($post->image->url) }} @else https://cdn.pixabay.com/photo/2020/11/07/10/36/motorcycle-5720553_960_720.jpg @endif)">
 

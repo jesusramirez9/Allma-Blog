@@ -5,6 +5,13 @@
     font-weight: 600;
     
 }
+.rmprsporce span{
+    color: white;
+    font-weight: 800;
+   
+    font-size: 0.8rem;
+
+}
 .revo_inte{
 font-size: 2.2rem !important;
 text-shadow: 1px 2px 6px #5d5d5d !important;
@@ -269,7 +276,7 @@ color: white;
         text-align: start;
     }
     .mbconcts{
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
     .txtprogr1,.txtprogr2{
         text-align: center;
@@ -303,6 +310,13 @@ color: white;
     margin-bottom: 0 !important;
     color: #ffffff !important;
     line-height: 1;
+    }
+    .rmprsporce span{
+        color: white;
+        font-weight: 800;
+       
+        font-size: 0.8rem;
+    
     }
 }
 
@@ -512,6 +526,13 @@ color: white;
     .program1 h2{
         font-size: 2.5rem;
     }
+    .rmprsporce span{
+        color: white;
+        font-weight: 800;
+       
+        font-size: 0.9rem;
+    
+    }
 }
 
 @media (min-width: 1250px) {
@@ -568,6 +589,13 @@ color: white;
     }
     .btnesrx{
         margin-left: 16rem;
+    }
+    .rmprsporce span{
+        color: white;
+        font-weight: 800;
+       
+        font-size: 1rem;
+    
     }
 }
 @media (min-width: 1600px) {

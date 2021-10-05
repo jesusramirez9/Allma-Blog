@@ -6,27 +6,27 @@
 @endsection
 
 @section('content')
-    <div id="carouselExampleSlidesOnly" class=" slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="secini1 slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item imgslide1 active"
                 style="background-image: url('{{ asset('images/programa/slider.png') }}')">
                 <div class="container">
-                    <div class="centrado contac_txt">
-                        <h1 class="txtcontc1">NUESTROS</h1>
-                        <p class="txtcontc2">PROGRAMAS</p>
+                    <div class="centrado contac_txt ">
+                        <h1 class="txtcontc1 animate__animated animate__fadeInLeft">NUESTROS</h1>
+                        <p class="txtcontc2 animate__animated animate__fadeInLeft">PROGRAMAS</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container program1">
+    <div class="container program1 secini1">
         <div class="">
-            <h2 class=" text-center" id="title-program">El sendero del Allma</h2>
+            <h2 class=" text-center animate__animated animate__fadeInDown" id="title-program">El sendero del Allma</h2>
         </div>
         <div class="mb-4" id="slick-empresa">
-            <div class="program-item">
-                <div class="img-square" style="background-image: url('{{asset('images/programa/foto_sendero_del_allma.png')}}')"></div>
+            <div class="program-item ">
+                <div class="img-square " style="background-image: url('{{asset('images/programa/foto_sendero_del_allma.png')}}')"></div>
             </div>
             <div class="program-item">
                 <div class="img-square" style="background-image: url({{asset('images/programa/felicitacion_del_allma_principal.png')}})"></div>
@@ -61,42 +61,42 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container secini1">
         <div class="row mrgprogr">
             <div class="col-12 col-md-6">
-                <p class="m-0  txtprogr1 txtbluex fwbold">¿necesitas información?</p>
-                <p class="txtprogr2 txtbluex fwbold">ESCRÍBENOS</p>
+                <p class="m-0  txtprogr1 txtbluex fwbold scrollflow -slide-right -opacity">¿necesitas información?</p>
+                <p class="txtprogr2 txtbluex fwbold scrollflow -slide-right -opacity">ESCRÍBENOS</p>
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label class="form-label text-black fwbold">Nombre:</label>
-                        <input type="text" name="nombre" class="form-control inptprgrs">
+                        <label class="form-label text-black fwbold  scrollflow -slide-right -opacity">Nombre:</label>
+                        <input type="text" name="nombre" class="form-control inptprgrs scrollflow -slide-right -opacity">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label class="form-label text-black fwbold">Dirección:</label>
-                        <input type="text" name="direccion" class="form-control inptprgrs" required>
+                        <label class="form-label text-black fwbold scrollflow -slide-left -opacity">Dirección:</label>
+                        <input type="text" name="direccion" class="form-control inptprgrs  scrollflow -slide-left -opacity" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label class="form-label text-black fwbold">Correo:</label>
-                        <input type="text" name="correo" class="form-control inptprgrs">
+                        <label class="form-label text-black fwbold scrollflow -slide-right">Correo:</label>
+                        <input type="text" name="correo" class="form-control inptprgrs scrollflow -slide-right">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label class="form-label text-black fwbold">Teléfono:</label>
-                        <input type="text" name="telefono" class="form-control inptprgrs" required>
+                        <label class="form-label text-black fwbold scrollflow -slide-left -opacity">Teléfono:</label>
+                        <input type="text" name="telefono" class="form-control inptprgrs scrollflow -slide-left -opacity" required>
                     </div>
                 </div>
                 <div class="col-12 mb-3">
-                    <label class="form-label text-black fwbold">Mensaje:</label>
-                    <textarea name="mensaje" rows="5" class="form-control inptprgrs"></textarea>
+                    <label class="form-label text-black fwbold scrollflow -slide-top -opacity">Mensaje:</label>
+                    <textarea name="mensaje" rows="5" class="form-control inptprgrs scrollflow -slide-top -opacity"></textarea>
                 </div>
                 <div class="text-end">
-                    <button class="btn btn-primary btn_contacto py-1">Enviar</button>
+                    <button class="btn btn-primary btn_contacto py-1  scrollflow -slide-top -opacity">Enviar</button>
                 </div>
             </div>
             <div class="col-12 col-md-6 align-self-center fot2prog">
                 <div>
-                    <img src="{{ asset('images/programa/foto_cuestinorio.png') }}" class="img-fluid" alt="slider">
+                    <img src="{{ asset('images/programa/foto_cuestinorio.png') }}" class="img-fluid scrollflow -slide-left -opacity" alt="slider">
                 </div>
             </div>
         </div>
